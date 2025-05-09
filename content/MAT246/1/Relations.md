@@ -34,11 +34,25 @@ It will be more convenient to denote these types of relations by the symbol $\si
 >In the examples above, decide which satisfy each of the three conditions in the definition. Which are equivalence relations? **Prove** all your claims.
 
 >[!note] Exercise.
->Compare the above properties with the [[1_2_Elementary set theory#^thm-basic-subseteq|basic properties]] of the $\subseteq$ relation.
+>Compare the above properties with the [[Elementary set theory#^thm-basic-subseteq|basic properties]] of the $\subseteq$ relation.
 
 >[!note] Exercise.
 >
 >For each subset of the above properties (e.g., non-**reflexive**, **symmetric** and non-**transitive**), find an example of a relation that satisfies exactly those properties.
+
+>[!def] Definition.
+>
+>Let $\sim$ be an equivalence relation on a set $X$ and $x\in X$.
+>
+>1. An _equivalence class_ is a set of the form $[x]_\sim:=\{y\in X:x\sim y\}$;
+>2. The _quotient_ is the set $X/\sim$ of all equivalence classes.
+
+For an example, imagine we define an equivalence relation on the set $S$ of all students taking this course by having two students be related if their first name starts with the same letter. In this case, each equivalence class corresponds to a letter of the alphabet, and the quotient is essentially the set of all letters needed to cover all the students. Thus if say no student's name starts with the letter `Ñ`, this letter is omitted from the quotient.
+
+>[!thm] Proposition.
+>
+>1. Equivalence classes are _pairwise disjoint_, that is, the intersection of two different classes is the empty set.
+>2. $[x]_\sim=[y]_\sim$ if and only if $x\sim y$.
 
 >[!hint] Hard problem.
 >

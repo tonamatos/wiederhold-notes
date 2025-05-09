@@ -2,7 +2,7 @@
 title: "1.2. Elementary set theory"
 draft: false
 ---
-Following the discussion in the [[1_1_Introduction|Introduction]], I will assume that we intuitively know what a _set_ is, and that I can reasonably talk about the relation $\in$ in the language of sets. I write $x\in A$ if the set $x$ is _element of_ $A$, or in other words if $x$ _belongs to_ $A$.
+Following the discussion in the [[Introduction|Introduction]], I will assume that we intuitively know what a _set_ is, and that I can reasonably talk about the relation $\in$ in the language of sets. I write $x\in A$ if the set $x$ is _element of_ $A$, or in other words if $x$ _belongs to_ $A$.
 ## Basic properties of sets
 
 I denote by $\emptyset$ the set with no elements. That is, the set satisfying that (recall that $\forall$ represents "for all")

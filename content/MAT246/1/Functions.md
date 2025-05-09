@@ -2,7 +2,7 @@
 title: "1.4. Functions"
 draft: false
 ---
-A _function_ is a special type of relation and, consequently, a set itself.
+A _function_ is a special type of relation and, consequently, itself a set.
 
 >[!def] Definition.
 >
@@ -56,21 +56,20 @@ My definition does not require any assumptions about the set $A$ and still makes
 >
 >For the functions mentioned in the above examples, find the direct and inverse images of the following sets under those functions. Assume that $Y=\mathbb N$ and that $X=\{0,2,4,\dots\}$. Prove your claims if you want to learn.
 >
->4. $\emptyset$.
->5. $\{0\}$.
->6. $\{0,1,2\}$.
->7. $\{0,2,4\}$.
->8. $X$.
+>1. $\emptyset$.
+>2. $\{0\}$.
+>3. $\{0,1,2\}$.
+>4. $\{0,2,4\}$.
+>5. $X$.
 
-## Injectivity and surjectivity
-
->[!def] Definition.
+>[!note] Exercises.
 >
->A function $f:X\to Y$ is called:
+>Suppose that $A\subseteq B$ and $f:X\to Y$. Prove that
 >
->1. _injective_, or _one-to-one_ if for all $x,y\in X$, $f(x)=f(y)$ implies $x=y$.
->2. _surjective_, or _onto_, if $f[X]=Y$.
->3. _bijective_ if it is both injective and surjective.
-
-Write the _contrapositive_ statement of the first definition above. When would you use the contrapositive rather than the direct statement? Write out the second definition as a _quantified_ statement.
-
+>$$
+>f[A]\subseteq f[B]\qquad\text{ and }\qquad f^{-1}[A]\subseteq f^{-1}[B].
+>$$
+>
+>>[!question]- Follow-up
+>>
+>>Under what conditions can you prove that the $\subseteq$ above is $=$ instead?

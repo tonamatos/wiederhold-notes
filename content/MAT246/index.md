@@ -11,34 +11,34 @@ draft: false
 
 # Concepts in Abstract Mathematics
 
->Welcome.
+Some general advice on learning mathematics can be found [[Advice|here]].
 
 ## 1. Foundations
 
-- [[1_1_Introduction|Introduction]]
-- [[1_2_Elementary set theory|Elementary set theory]]
-- [[1_3_Relations|Relations]]
-- [[1_4_Functions|Functions]]
-- [[1_5_Induction|Induction]]
+1. [[Introduction|Introduction]]
+2. [[Elementary set theory|Elementary set theory]]
+3. [[Relations|Relations and equivalence relations]]
+4. [[Functions|Functions]]
+5. [[Induction|The Naturals and proofs by induction]]
 
 ## 2. The Integers
 
-- [[1_Construction|Construction of the integers]]
+1. [[Construction|Construction of the integers]]
 
 ## 3. Infinity
 
-- [[1_Cardinal arithmetic|Cardinal arithmetic]]
-
-## 4. Combinatorics
-
-
-## 5. Topology
-
-
-## 6. Complex Numbers
-
+1. [[Cardinal arithmetic|Gentle cardinal arithmetic]]
 
 ---
+
+>[!danger] To be added in the June break:
+
+4. Combinatorics
+5. Topology
+6. Complex Numbers
+
+---
+
 ## Additional resources
 
 My course is self-contained. Everything you need to understand and solve any question whose answer constitutes a part of your **grade** can be answered with the material I cover in my lectures. Some of it is mentioned on this site.

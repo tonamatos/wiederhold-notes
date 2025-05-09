@@ -2,13 +2,13 @@
 title: "1.1. Introduction"
 draft: false
 ---
-This is the [Baron Münchhausen](https://en.wikipedia.org/wiki/File:Muenchhausen_Herrfurth_7_500x789.jpg). (I can't embed images yet sorry.)
+This is the [Baron Münchhausen](https://en.wikipedia.org/wiki/File:Muenchhausen_Herrfurth_7_500x789.jpg).
 
 In one of his adventures, he rides his horse into a marsh and get trapped in the mud. He pulls from his hair upwards, freeing both the horse and himself from his fate.
 
 In real life, he would not be able to do this without standing on **solid ground**. This begs the question: what is math build on?
 
-Consider the childish game of repeatedly asking **what is that?** For instance, you may study _continuous mappings_. What is that? Well, it is a type of _real-valued function_. What is that? Well, it is a type of _[[1_4_Functions|function]]_. What is that? Well, a special _[[1_3_Relations|relation]]_. What is that? A sub-_set_ of a Cartesian product... In the end, these games always hit the same bottom: a _set_. What is a _set_?
+Consider the childish game of repeatedly asking **what is that?** For instance, you may study _continuous mappings_. What is that? Well, it is a type of _real-valued function_. What is that? Well, it is a type of _[[Functions|function]]_. What is that? Well, a special _[[Relations|relation]]_. What is that? A sub-_set_ of a Cartesian product... In the end, these games always hit the same bottom: a _set_. What is a _set_?
 
 Like the Baron stuck in mud, we have run into the following situation.
 ## Münchhausen's trilemma
