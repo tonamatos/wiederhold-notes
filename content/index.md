@@ -2,6 +2,9 @@
 title: "Home page"
 draft: false
 ---
+>[!warning] Hello there!
+>
+>This site is part of an ongoing project created by me that aims to facilitate sharing academic content by implementing a live `markdown` editor with powerful sharing capabilities. It is not available to the public yet.
 
 This page serves as an example of what this website creator is capable of. It can render `markdown` language, which is plain text with minimal but powerful formatting options.
 

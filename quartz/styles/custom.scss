@@ -1,13 +1,11 @@
 @use "./base.scss";
 
-// Put your custom CSS here!
-
 /* -----------------------------------
    Highlight tweaks: italics, bold, headings
 ----------------------------------- */
 
 em, i {
-  color: #b0835a !important; /* soft orangey-beige for italics */
+  color: #d6b85f !important; /* brighter yellow-gold for italics */
   font-style: italic;
 }
 
@@ -69,11 +67,12 @@ blockquote {
 }
 
 /* -----------------------------------
-   Theorem & Proof Boxes
+   Theorem, Proof, Definition Boxes
 ----------------------------------- */
 
 .callout[data-callout="thm"],
-.callout[data-callout="proof"] {
+.callout[data-callout="proof"],
+.callout[data-callout="def"] {
   --callout-icon: none;
   background-color: transparent;
   border: 2px solid;
@@ -86,41 +85,60 @@ blockquote {
 /* Theorem: same color as h1 */
 .callout[data-callout="thm"] {
   border-color: #a67c52;
-  --color: #a67c52; /* same as h1 */
+  --color: #a67c52;
 }
 
 /* Proof: same color as h2 */
 .callout[data-callout="proof"] {
   border-color: #6b8e23;
-  --color: #6b8e23; /* same as h2 */
+  --color: #6b8e23;
 }
 
-/* Hide icons and tidy up */
+/* Definition: new color (purple) */
+.callout[data-callout="def"] {
+  border-color: #9c7dd0;
+  --color: #9c7dd0;
+}
+
+/* Hide icons */
 .callout[data-callout="thm"] .callout-icon,
-.callout[data-callout="proof"] .callout-icon {
+.callout[data-callout="proof"] .callout-icon,
+.callout[data-callout="def"] .callout-icon {
   display: none;
 }
 
-/* Match title color to box border (OR remove color entirely if you prefer) */
+/* Match title color to box border */
 .callout[data-callout="thm"] > .callout-title {
-  /* Option 1: match border color */
   color: #a67c52 !important;
-
-  /* Option 2: no color override (just delete or comment out the above line) */
 }
 
 .callout[data-callout="proof"] > .callout-title {
-  /* Option 1: match border color */
   color: #6b8e23 !important;
+}
 
-  /* Option 2: no color override (just delete or comment out the above line) */
+.callout[data-callout="def"] > .callout-title {
+  color: #9c7dd0 !important;
 }
 
 /* Content padding fix */
 .callout[data-callout="thm"] .callout-content,
-.callout[data-callout="proof"] .callout-content {
+.callout[data-callout="proof"] .callout-content,
+.callout[data-callout="def"] .callout-content {
   margin-bottom: 0;
   padding-bottom: 0;
+}
+
+/* Force title inner p color */
+.callout[data-callout="thm"] > .callout-title > .callout-title-inner > p {
+  color: #a67c52 !important;
+}
+
+.callout[data-callout="proof"] > .callout-title > .callout-title-inner > p {
+  color: #6b8e23 !important;
+}
+
+.callout[data-callout="def"] > .callout-title > .callout-title-inner > p {
+  color: #9c7dd0 !important;
 }
 
 /* -----------------------------------
@@ -137,13 +155,4 @@ blockquote {
   border: 1.5px solid;
   border-radius: 2px;
   padding: 8px;
-}
-
-/* Theorem & Proof: force title color by targeting the inner p tag */
-.callout[data-callout="thm"] > .callout-title > .callout-title-inner > p {
-  color: #a67c52 !important; /* same as the h1 / theorem box */
-}
-
-.callout[data-callout="proof"] > .callout-title > .callout-title-inner > p {
-  color: #6b8e23 !important; /* same as the h2 / proof box */
 }

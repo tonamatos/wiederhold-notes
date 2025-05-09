@@ -1,5 +1,5 @@
 ---
-title: "Cantor's theorem"
+title: "Example: Cantor's theorem"
 draft: false
 ---
 Cantor's proof that there are uncountably many reals uses a _diagonalization_ argument that may be generalized in the following way.
