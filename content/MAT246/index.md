@@ -21,13 +21,13 @@ Some general advice on learning mathematics can be found [[Advice|here]].
 2. [[Elementary set theory|Elementary set theory]]
 3. [[Relations|Relations and equivalence relations]]
 4. [[Functions|Functions]]
-5. [[1/Construction|Construction of the naturals]]
-6. [[Induction|The Naturals and proofs by induction]]
+5. [[ConstructionN|The naturals]]
+6. [[Induction|The naturals and proofs by induction]]
 7. [[Problems|Additional practice problems]]
 
 ### 2. The Integers
 
-1. [[Teaching/MAT246 Concepts in Abstract Math/2025 Summer/2/Construction|Construction of the integers]]
+1. [[ConstructionZ|Construction of the integers]]
 2. [[Divisibility|Divisibility and primes]]
 3. [[GCD and LCM|Greatest common divisor and least common multiple]]
 

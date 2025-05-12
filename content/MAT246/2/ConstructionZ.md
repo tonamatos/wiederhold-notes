@@ -68,7 +68,7 @@ I skip the details that are analogous to addition.
 
 >[!thm] Lemma.
 >
->The addition and multiplication of integers is well-defined, associative, commutative and distribute over each other. (Definition for all these words is found [[1/Construction|here]].)
+>The addition and multiplication of integers is well-defined, associative, commutative and distribute over each other. (Definition for all these words is found [[ConstructionN|here]].)
 
 The following is the way to formalize the simple idea that the naturals are **inside** of the integers.
 

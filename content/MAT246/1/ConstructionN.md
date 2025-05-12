@@ -1,5 +1,5 @@
 ---
-title: "1.5. Construction of the naturals"
+title: "1.5. The naturals"
 draft: false
 ---
 >[!warning] Note:
