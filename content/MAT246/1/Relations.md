@@ -45,7 +45,8 @@ It will be more convenient to denote these types of relations by the symbol $\si
 >Let $\sim$ be an equivalence relation on a set $X$ and $x\in X$.
 >
 >1. An _equivalence class_ is a set of the form $[x]_\sim:=\{y\in X:x\sim y\}$;
->2. The _quotient_ is the set $X/\sim$ of all equivalence classes.
+>2. We say $x$ is a _representative_ of the class $[x]_\sim$.
+>3. The _quotient_ is the set $X/\sim$ of all equivalence classes.
 
 For an example, imagine we define an equivalence relation on the set $S$ of all students taking this course by having two students be related if their first name starts with the same letter. In this case, each equivalence class corresponds to a letter of the alphabet, and the quotient is essentially the set of all letters needed to cover all the students. Thus if say no student's name starts with the letter `Ñ`, this letter is omitted from the quotient.
 
@@ -54,8 +55,10 @@ For an example, imagine we define an equivalence relation on the set $S$ of all 
 >1. Equivalence classes are _pairwise disjoint_, that is, the intersection of two different classes is the empty set.
 >2. $[x]_\sim=[y]_\sim$ if and only if $x\sim y$.
 
->[!hint] Hard problem.
+>[!note] Hard problem.
 >
 >Given any relation $\sim$ on a set $X$, you should find it easy to _extend_ it (that is, to find a relation $\sim'\supseteq\sim$) to a relation that is reflexive. You should also find it straightforward to extend it to a reflexive relation. Can you extend it to a transitive one? How?
 >
->**Note:** This problem has a "trivial" solution if you consider the equivalence relation $aRb$ iff $a,b\in X$. The idea is to find a solution that is _minimal_. That is, one that contains the given relation $\sim$, but no other relation satisfying the properties.
+>>[!hint]- Hint:
+>>
+>>This problem has a "trivial" solution if you consider the equivalence relation $aRb$ iff $a,b\in X$. The idea is to find a solution that is _minimal_. That is, one that contains the given relation $\sim$, but no other relation satisfying the properties.

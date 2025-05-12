@@ -1,39 +1,7 @@
 ---
 title: "3.1. Cardinal arithmetic"
-draft: false
+draft: true
 ---
->[!fail] Incomplete.
-
----
-
-## Injectivity and surjectivity
-
->[!def] Definition.
->
->A function $f:X\to Y$ is called:
->
->1. _injective_, or _one-to-one_ if for all $x,y\in X$, $f(x)=f(y)$ implies $x=y$.
->2. _surjective_, or _onto_, if $f[X]=Y$.
->3. _bijective_ if it is both injective and surjective.
-
-Write the _contrapositive_ statement of the first definition above. When would you use the contrapositive rather than the direct statement? Write out the second definition as a _quantified_ statement.
-
->[!note] Exercise.
->
->Out of all the examples mentioned in [[Functions|this page]], decide which ones are injective, which ones are surjective? Write a proof for each claim.
-
->[!hint] Problem.
->
->Let $f:X\to Y$ be a surjective function and define $x\sim y$ if $f(x)=f(y)$. Prove that $\sim$ is an equivalence relation on $X$. Where is surjectivity needed?
->
->Conversely, show that if if $\sim$ is an [[Relations#Equivalence relations|equivalence relation]] on $X$, then there is a set $Y$ and a surjective function $f: X\to Y$ such that $f(x)=f(y)$ if and only if $x\sim y$.
-
->[!hint] Problem.
->
->I say $P$ is a _partition_ of $X$ if $\bigcup P=X$, $\emptyset\notin P$ and the elements of $P$ are pairwise disjoint. Prove that any quotient on $X$ is a partition of $X$.
->
->Conversely, show that for any partition, there is an equivalence relation whose quotient is equal to the partition.
-
 ## An algebra of functions
 
 For this section, suppose that $f:A\to B$ and $g:B\to C$ are functions.
@@ -70,5 +38,5 @@ Compare these properties with others mentioned in previous chapters, such as [[R
 >
 >Despite appearances, it is **not** correct to say that this symbol defines an equivalence relation. An explanation for this goes well beyond the scope of this course but will be mentioned in the lectures.
 >
->For the sake of intuition, you can think of a _cardinal number_ as precisely the equivalence classes of this relation.
+>For the sake of intuition, you can think of _cardinal numbers_ as precisely the equivalence classes of this relation.
 

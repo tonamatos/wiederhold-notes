@@ -1,13 +1,7 @@
 ---
-title: "1.5. Induction"
+title: "1.6. Induction"
 draft: false
 ---
-## Informal construction of the naturals
-
->[!warning] Note:
->
->Informal discussions are inadequate for these notes and are thus mostly omitted.
-
 ## Why induction works
 
 Induction is a **proving technique**. The most elementary version of induction is used to prove statements of the form
@@ -24,9 +18,11 @@ $$
 
 That this particular statement is true for all $n$ is known as the _Goldbach Conjecture_ and it remains a famous open problem.
 
+### The well-ordering principle
+
 The property that makes induction possible is the _well-ordering principle_:
 
->[!def] Axiom (well-ordering principle).
+>[!def] Axiom (Well-ordering principle).
 >
 >Every non-empty subset of the naturals has a least element.
 
@@ -37,6 +33,8 @@ Some questions to deepen your understanding of the well-ordering principle follo
 >[!note] Exercises.
 >1. Is it true that every non-empty subset of the naturals has a _maximal_ element?
 >2. Is the well-ordering principle true if you replace the naturals with the integers?
+
+### First example: Gauss summation formula
 
 The way this principle is applied is that, whenever some natural number has a property, there must always be a **first** natural number with that property. Let us start with a simple example often attributed to Gauss.
 
@@ -68,6 +66,8 @@ The way this principle is applied is that, whenever some natural number has a pr
 >
 >which is the conclusion of the proposition but for $n$. This is a contradiction. Hence, such an $n$ cannot exist and thus $A=\emptyset$ or, in words, **all naturals satisfy the proposition**.
 
+### The principle of mathematical induction
+
 There is an easier way of writing the previous proof, namely using the following principle instead.
 
 >[!thm] Corollary (Principle of mathematical induction).
@@ -87,7 +87,7 @@ There is an easier way of writing the previous proof, namely using the following
 >
 >Therefore, such an $m$ cannot exist and hence $A=\mathbb N$.
 
->[!hint] Think.
+>[!question] Reflect.
 >
 >How would the conclusion change if (1.) is changed to $3\in A$ instead? What about $m\in A$?
 
@@ -105,11 +105,13 @@ This principle offers a sort of "cooking recipe" for writing proofs: First, veri
 
 While this structure is useful for standardizing solutions and learning how to write proofs, **I discourage rote memorization**, as it hinders understanding more complicated proofs that might not be easily written in this format.
 
+### Example of an incorrect proof by induction
+
 >[!warning] Warning:
 >
 >Careful when applying the inductive hypothesis to the inductive step. The following example illustrates one possible complication.
 
->[!error] Fallacious claim:
+>[!thm] Fallacious claim.
 >
 >All trains have just one type of car.
 
@@ -139,12 +141,34 @@ As I move to more complicated proofs by induction, one might run into the follow
 >>
 >>The formal statement is: for every natural $n$, if $n\geq30$, then there exist naturals $s,t,u$ such that $n=15s+10t+6u$.
 
->[!proof]+ Proof:
+>[!proof]- Proof by "weak" induction:
 >
->>[!fail] Removed for being in the problem set.
+>**Base case:** Indeed, notice that $30=15+15$.
+>
+>**Inductive hypothesis:** Suppose that $n=15s+10t+6u\geq30$.
+>
+>**Inductive step:** If $s>0$, then
+>
+>$$
+>15(s-1)+10(t+1)+6(u+1)=15s+10t+6u-15+10+6=n+1.
+>$$
+>
+>Suppose, on the other hand, that $s=0$. If $t=0$, then $n=6u$ where $u\geq5$ (because $n\geq30$). Thus, $n+1=6u+1=24+6(u-4)+1=15(1)+10(1)+6(u-4)$. Similarly, if $t=1$ and hence $n=10+6u$, I conclude that $u\geq4$ and write $n+1=10+24+6(u-4)+1=15(1)+10(2)+6(u-4)$. Therefore, from now on I assume that $t\geq2$.
+>
+>Now, I consider the possible values of $u$. If $u=0$, then $n=10t$ where $t\geq3$. I write $n+1=30+10(t-3)+1=15(1)+10(t-2)+6(1)$. The case when $u=1$ means that $n=10t+6$ with $t\geq3$. Hence, $n+1=30+10(t-3)+6+1=15(1)+10(t-2)+6(2)$. Similarly, whenever $u=2$, $n=10t+6(2)$ for $t\geq2$. Thus, $n+1=20+10(t-2)+6(2)+1=15(1)+10(t-2)+6(3)$. Also, if $u=3$, $n=10t+6(3)$ where $t\geq2$. So, $n+1=20+12+10(t-2)+6(1)+1=15(1)+10(t-2)+6(4)$. Hence, I assume that $u\geq4$, since otherwise I am done.
+>
+>Since I am assuming that $s=0$, $t\geq2$ and $u\geq4$, it follows that
+>
+>$$
+>n+1=10t+6u+1=44+10(t-2)+6(u-4)+1
+>$$
+>$$
+>=45+10(t-2)+6(u-4)=15(3)+10(t-2)+6(u-4).
+>$$
 
+### The principle of strong mathematical induction
 
-You can **strengthen**} the hypothesis by not just assuming that the property you want to prove holds for the previous natural but indeed **all** smaller naturals:
+You can **strengthen** the hypothesis by not just assuming that the property you want to prove holds for the previous natural but indeed **all** smaller naturals:
 
 >[!thm] Corollary (Principle of strong mathematical induction).
 >
@@ -166,8 +190,13 @@ There is no need to add the assumption that $0\in A$ in this case, since this is
 
 I illustrate the fact that, in many cases, you still need to provide the base case to complete the proof by rewriting the proof of the Claim from above.
 
+>[!proof]- Proof of Claim by strong induction:
+>
+>>[!fail] Removed for being in the problem set.
+
 ```python
-# Can you write a computer program that explicitly finds these paremeters?
+# Can you write a computer program that
+# explicitly finds these parameters?
 # Something like this:
 
 def money(n: int):
@@ -175,11 +204,12 @@ def money(n: int):
 	return s, t, u
 ```
 
->[!proof]+ Proof of Claim by strong induction:
->
->>[!fail] Removed for being in the problem set.
+Implementing this particular idea in code produces a _greedy algorithm_ that attempts to maximize the number of coins. Find similar proofs/algorithms that maximize the bills instead. This makes the proof longer to write. Why? An important insight to be gained is that from a deep mathematical perspective:
 
-
-Implementing this particular idea in code produces a _greedy algorithm_ that attempts to maximize the number of coins. Find similar proofs/algorithms that maximize the bills instead. This makes the proof longer to write. Why?
+>**Induction and recursion are the same phenomenon.**
 
 Moreover, the attentive reader will verify that the base cases were tacitly used in the original proof, hinting the fact that both induction types are really just **different ways of writing the same proof**.
+
+>[!question] Reflect.
+>
+>In this section I showed you an example of how a proof by strong induction can be much shorter than the "weak" variant. Can you find a problem that is much harder to solve by weak induction than by strong induction? See [[Problems#Strong induction|here]].

@@ -27,6 +27,7 @@ $$
 >[!info] Remark.
 >
 >The sets $A$ and $B$ are equal if and only if for all $x$,
+>
 >$$
 >x\in A\iff x\in B.
 >$$ 
@@ -38,7 +39,7 @@ This is a great moment to develop some skills that will serve you in learning ma
 >2. What are examples and non-examples of the situation? In this case, can you say list out all subsets of the set $\{0,1\}$?
 >3. Write down a proof of a set being a subset of another set. Write down a proof of a set not being subset of a given set. What techniques did you use to prove these different statements?
 
->[!thm] Basic properties of subsets.
+>[!thm] Proposition.
 >
 >For any sets $A,B$ and $C$,
 >1. $A\subseteq A$ (_Reflexivity_);
@@ -78,6 +79,26 @@ In this course, I do not formally define the _ordered pair_ $(a,b)$, but all you
 >$$
 >A\cap B\subseteq C\subseteq A\cup B.
 >$$
+
+>[!note] Exercise.
+>
+>Show that the following statements are equivalent for any sets $A$ and $B$.
+>
+>$$
+>A\cup B=B\qquad A\subseteq B\qquad A\cap B=A
+>$$
+>
+>>[!check]- Solution.
+>>
+>>Assume that $A\cup B=B$ and let us show that $A\subseteq B$. Given any $x$, if $x\in A$, then in particular $x\in A\cup B=B$. Therefore, $x\in B$.
+>>
+>>Now assume that $A\subseteq B$ and let us decide what $A\cap B$ is. It is obvious that $A\cap B\subseteq A$. Given $x\in A$, our assumption tells us that $x\in B$. Thus, $x\in A\cap B$ and this proves the other containment. Therefore, $A\cap B=A$.
+>>
+>>Finally, assume that $A\cap B=A$. We know that $B\subseteq A\cup B$. Given $x\in A\cup B$, there are two cases. Either $x\in A$, in which case, since $A=A\cap B$, $x$ is also an element of $B$; or $x\in B$. In either case, $x$ must be an element of $B$, which proves that $A\cup B=B$.
+>>
+>>>[!question] Reflect.
+>>>
+>>>We sought out to prove three equivalence statements, yet this proof only contains three implications, instead of six. Convince yourself that our proof is indeed complete.
 
 ## Finite sets (informal discussion)
 

@@ -70,6 +70,34 @@ My definition does not require any assumptions about the set $A$ and still makes
 >f[A]\subseteq f[B]\qquad\text{ and }\qquad f^{-1}[A]\subseteq f^{-1}[B].
 >$$
 >
->>[!question]- Follow-up
+>>[!question] Reflect.
 >>
->>Under what conditions can you prove that the $\subseteq$ above is $=$ instead?
+>>Under what conditions can you change $\subseteq$ for $=$?
+
+## Injectivity and surjectivity
+
+>[!def] Definition.
+>
+>A function $f:X\to Y$ is called:
+>
+>1. _injective_, or _one-to-one_ if for all $x,y\in X$, $f(x)=f(y)$ implies $x=y$.
+>2. _surjective_, or _onto_, if $f[X]=Y$.
+>3. _bijective_ if it is both injective and surjective.
+
+Write the _contrapositive_ statement of the first definition above. When would you use the contrapositive rather than the direct statement? Write out the second definition as a _quantified_ statement.
+
+>[!note] Exercise.
+>
+>Out of all the examples mentioned in this page, decide which ones are injective, which ones are surjective? Write a proof for each claim.
+
+>[!hint] Problem.
+>
+>Let $f:X\to Y$ be a surjective function and define $x\sim y$ if $f(x)=f(y)$. Prove that $\sim$ is an equivalence relation on $X$. Where is surjectivity needed?
+>
+>Conversely, show that if if $\sim$ is an [[Relations#Equivalence relations|equivalence relation]] on $X$, then there is a set $Y$ and a surjective function $f: X\to Y$ such that $f(x)=f(y)$ if and only if $x\sim y$.
+
+>[!hint] Problem.
+>
+>I say $P$ is a _partition_ of $X$ if $\bigcup P=X$, $\emptyset\notin P$ and the elements of $P$ are pairwise disjoint. Prove that any quotient on $X$ is a partition of $X$.
+>
+>Conversely, show that for any partition, there is an equivalence relation whose quotient is equal to the partition.
