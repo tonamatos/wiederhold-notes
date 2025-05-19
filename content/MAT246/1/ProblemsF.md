@@ -122,11 +122,11 @@ Find the _contrapositive_ of the following implications.
 >
 >>[!hint]- Hint.
 >>
->>Think of $X$ as a set of villages, and $\rightarrowtail$ as one-way roads connecting every pair. The conclusion says that we can make a path $f$ to traverse all villages: $f(1)\rightarrowtail f(2)\rightarrowtail\cdots\rightarrowtail f(n)$. Make a diagram.
+>>Think of $X$ as a set of villages, and $\rightarrowtail$ as one-way roads connecting every pair. The conclusion says that you can make a path $f$ to traverse all villages: $f(1)\rightarrowtail f(2)\rightarrowtail\cdots\rightarrowtail f(n)$. Make a diagram.
 >
 >>[!check]- Solution.
 >>
->>We proceed by induction on $n$. If $n=1$, the statement holds vacuously. Now suppose that the statement holds for $n>1$.
+>>I proceed by induction on $n$. If $n=1$, the statement holds vacuously. Now suppose that the statement holds for $n>1$.
 >>
 >>>[!hint] Hint.
 >>>
@@ -142,9 +142,9 @@ Find the _contrapositive_ of the following implications.
 >>
 >>>[!hint] Hint.
 >>>
->>>The first and last villages of the path $f$ must be connected to $x$ somehow, and we need to figure out how to add $x$ to this plan. This will depend on the direction of the roads. If the road leads from $x$ to $f(1)$, the first village, then clearly we can start at $x$ and then do the path $f$. Similarly, if $f(n)$ leads into $x$, we can do the path $f$ and then go to $x$ last. These two cases are made precise as follows. The overline on $\overline f$ is just notation.
+>>>The first and last villages of the path $f$ must be connected to $x$ somehow, and I need to figure out how to add $x$ to this plan. This will depend on the direction of the roads. If the road leads from $x$ to $f(1)$, the first village, then clearly I can start at $x$ and then do the path $f$. Similarly, if $f(n)$ leads into $x$, I can do the path $f$ and then go to $x$ last. These two cases are made precise as follows. The overline on $\overline f$ is just notation.
 >>
->>If $f(n)\rightarrowtail x$, we define $\overline f:\{1,\dots,n+1\}\to X$ given by
+>>If $f(n)\rightarrowtail x$, I define $\overline f:\{1,\dots,n+1\}\to X$ given by
 >>
 >>$$
 >>\overline f(i)=\begin{cases}
@@ -153,7 +153,7 @@ Find the _contrapositive_ of the following implications.
 >>\end{cases}
 >>$$
 >>
->>$\overline f$ satisfies (2.) and so we are done in this case.
+>>$\overline f$ satisfies (2.) and so I am done in this case.
 >>
 >>>[!hint] Hint.
 >>>
@@ -176,9 +176,9 @@ Find the _contrapositive_ of the following implications.
 >>
 >>>[!hint] Hint.
 >>>
->>>How do we incorporate $x$ into the path in this case? Well, we cannot add $x$ at the beginning or the end, since the roads point the wrong way. Logically, we must make a detour to $x$ somewhere in the middle of the path: we need a road from some village $f(i)$ to $x$, and a road from $x$ into the next village $f(i+1)$. Then, $f(1)\rightarrowtail\cdots\rightarrowtail f(i)\rightarrowtail x\rightarrowtail f(i+1)\rightarrowtail\cdots\rightarrowtail f(n)$ is a valid path.
+>>>How do you incorporate $x$ into the path in this case? Well, you cannot add $x$ at the beginning or the end, since the roads point the wrong way. Logically, you must make a detour to $x$ somewhere in the middle of the path: you need a road from some village $f(i)$ to $x$, and a road from $x$ into the next village $f(i+1)$. Then, $f(1)\rightarrowtail\cdots\rightarrowtail f(i)\rightarrowtail x\rightarrowtail f(i+1)\rightarrowtail\cdots\rightarrowtail f(n)$ is a valid path.
 >>
->>We claim that there is $1\leq i<n$ such that $f(i)\rightarrowtail x\rightarrowtail f(i+1)$.
+>>I claim that there is $1\leq i<n$ such that $f(i)\rightarrowtail x\rightarrowtail f(i+1)$.
 >>
 >>By contradiction, suppose not. That is, assume that
 >>
@@ -186,13 +186,13 @@ Find the _contrapositive_ of the following implications.
 >>\text{for all }1\leq i<n,\quad x\rightarrowtail f(i)\text{ or }f(i+1)\rightarrowtail x.\qquad(4)
 >>$$
 >>
->>We now show that $f(n)\rightarrowtail x$ by an inductive argument, contradicting (3). When $j=1$, by (3) and (4), $f(j+1)\rightarrowtail x$. If $j+1<n$ is such that $f(j+1)\rightarrowtail x$, then by (4), $f(j+2)\rightarrowtail x$. Thus, by induction, $f(n)\rightarrowtail x$.
+>>I now show that $f(n)\rightarrowtail x$ by an inductive argument, contradicting (3). When $j=1$, by (3) and (4), $f(j+1)\rightarrowtail x$. If $j+1<n$ is such that $f(j+1)\rightarrowtail x$, then by (4), $f(j+2)\rightarrowtail x$. Thus, by induction, $f(n)\rightarrowtail x$.
 >>
 >>>[!hint] Hint.
 >>>
->>>Hidden inductions like these appear all the time in more elaborate proofs. The precise statement we proved is that for all $j\in\mathbb N$, if $j<n$, then $f(j+1)\rightarrowtail x$. Thus, in particular (taking $j=n-1$), $f(n)\rightarrowtail x$.
+>>>Hidden inductions like these appear all the time in more elaborate proofs. The precise statement I proved is that for all $j\in\mathbb N$, if $j<n$, then $f(j+1)\rightarrowtail x$. Thus, in particular (taking $j=n-1$), $f(n)\rightarrowtail x$.
 >>
->>Therefore, the claim is true and we define
+>>Therefore, the claim is true and I define
 >>
 >>$$
 >>\overline f(k)=\begin{cases}

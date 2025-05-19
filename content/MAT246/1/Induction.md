@@ -212,4 +212,4 @@ Moreover, the attentive reader will verify that the base cases were tacitly used
 
 >[!question] Reflect.
 >
->In this section I showed you an example of how a proof by strong induction can be much shorter than the "weak" variant. Can you find a problem that is much harder to solve by weak induction than by strong induction? See [[Problems#Strong induction|here]].
+>In this section I showed you an example of how a proof by strong induction can be much shorter than the "weak" variant. Can you find a problem that is much harder to solve by weak induction than by strong induction? See [[ProblemsF#Strong induction|here]].

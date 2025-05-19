@@ -1,35 +1,39 @@
 ---
-title: "GCD and LCM"
-draft: true
+title: "2.3 GCD and LCM"
+draft: false
 ---
 >[!def] Definition.
 >
->Let $a$ and $b$ be naturals that are not both zero. The _greatest common divisor_ of $a$ and $b$}, denoted $\gcd(a,b)$ is the largest integer that divides both $a$ and $b$. Similarly, the _least common multiple_, denoted $\operatorname{lcm}(a,b)$ is the smallest integer that is divided by every element both.
+>Let $a$ and $b$ be naturals that are not both zero. The _greatest common divisor_ of $a$ and $b$, denoted $\gcd(a,b)$ is the largest integer that divides both $a$ and $b$. Similarly, the _least common multiple_, denoted $\operatorname{lcm}(a,b)$ is the smallest integer that is divided by every element both. Both of these concepts are generalized to more than two elements, although we will rarely use them.
 >
 >Two integers $a$ and $b$ are called _coprime_ or _relatively prime_ if $\gcd(a,b)=1$. I denote this phenomenon by $a\perp b$.
+
+>[!question] Reflect.
+>
+>What does the word _largest_ in the definition above mean precisely? Am I referring to the usual order of integers $\leq$, or the divisibility order $\mid$ instead? What is the relationship between these two anyway?
 
 >[!note] Exercises.
 >
 >1. If a prime $p$ does not divide $a$, then $p\perp a$.
 >2. Prove that consecutive integers are coprime.
->3. If $p$ is prime and $\gcd(p,n)>1$, then $p\vert n$. If, moreover $n$ is also prime, then necessarily $p=n$.
+>3. If $p$ is prime and $\gcd(p,n)>1$, then $p\mid n$. If, moreover $n$ is also prime, then necessarily $p=n$.
 >4. Different primes are always coprime. Show with an example that the converse does not hold. That is, show that coprime numbers need not be prime.
 
 ## The Euclidean algorithm
 
-I now introduce on of many examples in mathematics where the statement of the theorem is not that important, but the proof is crucial to understand the material.
+I now introduce one of many examples in mathematics where the statement of the theorem is not that important, but the proof is crucial to understand the material.
 
 >[!thm] Theorem (Euclidean algorithm).
 >
 >Assume that, for naturals $a$ and $d\geq1$, the Q-R formula gives $a=dq+r$. Then,
 >
 >$$
->\gcd(a,d)=\gcd(d,r)
+>\gcd(a,d)=\gcd(d,r).
 >$$
 
 >[!question] Reflect.
 >
->Again, spend some time thinking why is this called an _algorithm_. There aren't any steps.
+>Again, spend some time thinking why is this called an _algorithm_; there aren't any steps!
 
 >[!note] Exercise.
 >
@@ -37,7 +41,7 @@ I now introduce on of many examples in mathematics where the statement of the th
 >
 >>[!check]- Solution.
 >>
->>Recursion is **elegant**.
+>>Recursion is **elegant**. (But can be wildly inefficient too.)
 >>
 >>```python
 >>def gcd(a, b):
@@ -114,14 +118,26 @@ The following consequences follow rather easily, but are non trivial if proved f
 
 >[!note] Exercise (Euclid's lemma 1).
 >
->If $p$ is prime and $p\vert ab$, then either $p\vert a$ or $p\vert b$.
+>If $p$ is prime and $p\mid ab$, then either $p\mid a$ or $p\mid b$.
  
 The same idea can be used to prove the slightly more general result:
  
 >[!thm] (Euclid's lemma 2)
 >
->Suppose that $a\perp b$ and $a\vert bc$, then $a\vert c$.
+>Suppose that $a\perp b$ and $a\mid bc$, then $a\mid c$.
 
 >[!note] Exercise.
 >
 >Prove that for every integer at least 5 of the form $n=6k\pm1$, $n^2-1$ is divisible by 24.
+
+>[!note] **Hard** exercise.
+>
+>Prove this generalization of Bézout's identity. Let $n$ be a positive natural and take a set of integers $\{a_1,\dots,a_n\}\neq\{0\}$. Then,
+>
+>$$
+>\gcd(a_1,\dots,a_n)=\min\left\{\sum_{i=1}^k\alpha_ia_i>0:\alpha_i\in\mathbb Z\right\}.
+>$$
+>
+>>[!hint]- Hint.
+>>
+>>Do not use induction, but apply the [[Induction#The well-ordering principle|well-ordering principle]] directly instead.

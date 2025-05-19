@@ -10,7 +10,7 @@ In real life, he would not be able to do this without standing on **solid ground
 
 Consider the childish game of repeatedly asking **what is that?** For instance, you may study _continuous mappings_. What is that? Well, it is a type of _real-valued function_. What is that? Well, it is a type of _[[Functions|function]]_. What is that? Well, a special _[[Relations|relation]]_. What is that? A sub-_set_ of a Cartesian product... In the end, these games always hit the same bottom: a _set_. What is a _set_?
 
-Like the Baron stuck in mud, we have run into the following situation.
+Like the Baron stuck in mud, I have run into the following situation.
 ## Münchhausen's trilemma
 
 >**Any truth** ultimately boils down to one of three types of arguments.
@@ -33,7 +33,7 @@ $$
 X\in X\quad\iff\quad X\notin X
 $$
 
-I have arrived at a contradiction. How do we resolve this? One way is to make rules that govern what things can be sets. These rules should not allow $X$ to be a set, to avoid this paradox.
+I have arrived at a contradiction. How do you resolve this? One way is to make rules that govern what things can be sets. These rules should not allow $X$ to be a set, to avoid this paradox.
 
 Evidently, the problem of making a set of rules that will disallow **all** paradoxes is much more complicated than you might think.
 

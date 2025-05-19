@@ -2,7 +2,7 @@
 title: "1.2. Elementary set theory"
 draft: false
 ---
-Following the discussion in the [[Introduction|Introduction]], I will assume that we intuitively know what a _set_ is, and that I can reasonably talk about the relation $\in$ in the language of sets. I write $x\in A$ if the set $x$ is _element of_ $A$, or in other words if $x$ _belongs to_ $A$.
+Following the discussion in the [[Introduction|Introduction]], I will assume that I intuitively know what a _set_ is, and that I can reasonably talk about the relation $\in$ in the language of sets. I write $x\in A$ if the set $x$ is _element of_ $A$, or in other words if $x$ _belongs to_ $A$.
 ## Basic properties of sets
 
 I denote by $\emptyset$ the set with no elements. That is, the set satisfying that (recall that $\forall$ represents "for all")
@@ -13,7 +13,7 @@ $$
 
 >[!def] Definition.
 >
->Given two sets $A$ and $B$, we say _$A$ is a subset of $B$_, or _$A$ is contained in $B$_, in symbols, 
+>Given two sets $A$ and $B$, I say _$A$ is a subset of $B$_, or _$A$ is contained in $B$_, in symbols, 
 >$$
 >A\subseteq B
 >$$
@@ -35,8 +35,9 @@ $$
 This is a great moment to develop some skills that will serve you in learning math in general. Whenever encountering a **definition** for the first time, always do the following exercise:
 
 >[!hint] Exercise scheme.
->1. What is the negation of the definition? In this case, what does it mean for $A$ to **not** be a subset of $B$? We can use the symbol $A\not\subseteq B$.
->2. What are examples and non-examples of the situation? In this case, can you say list out all subsets of the set $\{0,1\}$?
+>
+>1. What is the negation of the definition? In this case, what does it mean for $A$ to **not** be a subset of $B$? I use the symbol $A\not\subseteq B$.
+>2. What are examples and non-examples of the situation? In this case, can you list out all subsets of the set $\{0,1\}$?
 >3. Write down a proof of a set being a subset of another set. Write down a proof of a set not being subset of a given set. What techniques did you use to prove these different statements?
 
 >[!thm] Proposition.
@@ -92,13 +93,13 @@ In this course, I do not formally define the _ordered pair_ $(a,b)$, but all you
 >>
 >>Assume that $A\cup B=B$ and let us show that $A\subseteq B$. Given any $x$, if $x\in A$, then in particular $x\in A\cup B=B$. Therefore, $x\in B$.
 >>
->>Now assume that $A\subseteq B$ and let us decide what $A\cap B$ is. It is obvious that $A\cap B\subseteq A$. Given $x\in A$, our assumption tells us that $x\in B$. Thus, $x\in A\cap B$ and this proves the other containment. Therefore, $A\cap B=A$.
+>>Now assume that $A\subseteq B$ and let us decide what $A\cap B$ is. It is obvious that $A\cap B\subseteq A$. Given $x\in A$, my assumption tells us that $x\in B$. Thus, $x\in A\cap B$ and this proves the other containment. Therefore, $A\cap B=A$.
 >>
->>Finally, assume that $A\cap B=A$. We know that $B\subseteq A\cup B$. Given $x\in A\cup B$, there are two cases. Either $x\in A$, in which case, since $A=A\cap B$, $x$ is also an element of $B$; or $x\in B$. In either case, $x$ must be an element of $B$, which proves that $A\cup B=B$.
+>>Finally, assume that $A\cap B=A$. Clearly, $B\subseteq A\cup B$. Given $x\in A\cup B$, there are two cases. Either $x\in A$, in which case, since $A=A\cap B$, $x$ is also an element of $B$; or $x\in B$. In either case, $x$ must be an element of $B$, which proves that $A\cup B=B$.
 >>
 >>>[!question] Reflect.
 >>>
->>>We sought out to prove three equivalence statements, yet this proof only contains three implications, instead of six. Convince yourself that our proof is indeed complete.
+>>>I sought out to prove three equivalence statements, yet this proof only contains three implications, instead of six. Convince yourself that my proof is indeed complete.
 
 ## Finite sets (informal discussion)
 

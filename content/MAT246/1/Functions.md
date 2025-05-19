@@ -90,14 +90,14 @@ Write the _contrapositive_ statement of the first definition above. When would y
 >
 >Out of all the examples mentioned in this page, decide which ones are injective, which ones are surjective? Write a proof for each claim.
 
->[!hint] Problem.
+>[!note] Exercise.
 >
->Let $f:X\to Y$ be a surjective function and define $x\sim y$ if $f(x)=f(y)$. Prove that $\sim$ is an equivalence relation on $X$. Where is surjectivity needed?
+>Let $f:X\to Y$ be a surjective function and define $x\sim y$ if $f(x)=f(y)$. Prove that $\sim$ is an [[Relations#Equivalence relations|equivalence relation]] on $X$. Where is surjectivity needed?
 >
->Conversely, show that if if $\sim$ is an [[Relations#Equivalence relations|equivalence relation]] on $X$, then there is a set $Y$ and a surjective function $f: X\to Y$ such that $f(x)=f(y)$ if and only if $x\sim y$.
+>Conversely, show that if if $\sim$ is an equivalence relation on $X$, then there is a set $Y$ and a surjective function $f: X\to Y$ such that $f(x)=f(y)$ if and only if $x\sim y$.
 
->[!hint] Problem.
+>[!note] **Hard** exercise.
 >
->I say $P$ is a _partition_ of $X$ if $\bigcup P=X$, $\emptyset\notin P$ and the elements of $P$ are pairwise disjoint. Prove that any quotient on $X$ is a partition of $X$.
+>I say $P$ is a _partition_ of $X$ if $\bigcup P=X$ ($\bigcup P$ is the union over all sets that are members of $P$), $\emptyset\notin P$ and the elements of $P$ are pairwise disjoint. Prove that any quotient on $X$ is a partition of $X$.
 >
 >Conversely, show that for any partition, there is an equivalence relation whose quotient is equal to the partition.

@@ -1,7 +1,11 @@
 ---
-title: "2.1. Construction"
-draft: true
+title: "2.1. Construction of the integers"
+draft: false
 ---
+>[!warning] Note:
+>
+>Due to time constrains caused by holidays, most of this section is likely to be skipped during lectures or only treated informally. You can read the details here, but only things mentioned in the lectures are part of the evaluation.
+
 Algebraically, I am interested in solving equations of the form
 
 $$
@@ -70,7 +74,9 @@ I skip the details that are analogous to addition.
 >
 >The addition and multiplication of integers is well-defined, associative, commutative and distribute over each other. (Definition for all these words is found [[ConstructionN|here]].)
 
-The following is the way to formalize the simple idea that the naturals are **inside** of the integers.
+## The integers contain the naturals
+
+In this section I formalize the idea that the naturals are **inside** of the integers.
 
 >[!thm] Theorem (Embedding of $\mathbb N$ in $\mathbb Z$).
 >

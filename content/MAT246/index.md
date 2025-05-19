@@ -17,23 +17,27 @@ Some general advice on learning mathematics can be found [[Advice|here]].
 
 ### 1. Foundations
 
-1. [[Introduction|Introduction]]
-2. [[Elementary set theory|Elementary set theory]]
-3. [[Relations|Relations and equivalence relations]]
-4. [[Functions|Functions]]
+1. [[Introduction]]
+2. [[Elementary set theory]]
+3. [[Relations]]
+4. [[Functions]]
 5. [[ConstructionN|The naturals]]
-6. [[Induction|The naturals and proofs by induction]]
-7. [[Problems|Additional practice problems]]
+6. [[Induction]]
+7. [[ProblemsF|Additional practice problems]]
 
 ### 2. The Integers
 
 1. [[ConstructionZ|Construction of the integers]]
-2. [[Divisibility|Divisibility and primes]]
+2. [[Divisibility]]
 3. [[GCD and LCM|Greatest common divisor and least common multiple]]
+4. [[FTA|The fundamental theorem of arithmetic]]
+5. [[Modular arithmetic]]
+6. [[Fields]]
+7. [[CRT and FLT|Solving a non-linear congruence]]
 
 ### 3. Infinity
 
-1. [[Cardinal arithmetic|Gentle cardinal arithmetic]]
+1. Gentle cardinal arithmetic
 
 
 # **June break & midterm**
