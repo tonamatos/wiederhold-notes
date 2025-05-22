@@ -1,5 +1,5 @@
 ---
-title: "2.4 The fundamental theorem of arithmetic"
+title: "2.4. Fundamental theorem"
 draft: false
 ---
 I will present to you a more modern treatment of this very old theorem than what you are likely to find in textbooks. I need some basic notation for this.

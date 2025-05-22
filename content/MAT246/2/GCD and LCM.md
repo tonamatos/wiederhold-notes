@@ -1,5 +1,5 @@
 ---
-title: "2.3 GCD and LCM"
+title: "2.3. GCD and LCM"
 draft: false
 ---
 >[!def] Definition.

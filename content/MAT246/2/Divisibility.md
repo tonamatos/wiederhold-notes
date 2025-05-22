@@ -1,5 +1,5 @@
 ---
-title: "2.2 Divisibility"
+title: "2.2. Divisibility"
 draft: false
 ---
 ## The division algorithm
@@ -31,13 +31,7 @@ r = a%d
 
 >[!proof] Proof of the division algorithm.
 >
->Let $a$ and $d\geq1$ be integers. I only focus on proving the existence of $q$ and $r$ in the case when $a$ is non negative, as this is the only part of the argument that requires induction. Concretely, the uniqueness argument should be done separately, and the general case when $a$ is an integer follows from the discussion presented here.
->
->The case when $a=0$ is clear, since $a=d\cdot0+0$ for any $d$. Now, assume that the statement holds for all naturals smaller than $a$ and consider the following cases.
->
->If $a<d$, then writing $a=d\cdot0+a$ fulfills the sought conditions, and no induction is needed.
->
->If, on the other hand, $d\leq a$, then applying the inductive hypothesis to the natural $a-d$, which is of course less than $a$, I get $q',r$ integers such that $a-d=dq'+r$. But then, $a=d(q'+1)+r$ so letting $q=q'+1$ I am done.
+>>[!fail] Removed during Quiz 3.
 
 This is another illustrative example of how strong induction can be useful. Attempting to prove this by weak induction, one runs into the problem of having to use the fact that $a$ can be written as $a=dq+r$ to accomplish the same for $a+1$, which is cumbersome and not intuitive.
 
@@ -79,9 +73,9 @@ Let us prove some elementary properties of divisibility before I leave some exer
 
 >[!proof] Proof:
 >
->4. Since $n=1\cdot n$, $n\mid n$. The same equality proves that $1\mid n$.
->5. Assume that $a\mid b$ and $b\mid c$. By definition, there are integers $s$ and $t$ such that $b=sa$ and $c=tb$. Then, using the associative properties of the product of integers, $c=t(sa)=(ts)a$, and so $a\mid c$.
->6. Solved in Tutorial 4.
+>1. Since $n=1\cdot n$, $n\mid n$. The same equality proves that $1\mid n$.
+>2. Assume that $a\mid b$ and $b\mid c$. By definition, there are integers $s$ and $t$ such that $b=sa$ and $c=tb$. Then, using the associative properties of the product of integers, $c=t(sa)=(ts)a$, and so $a\mid c$.
+>3. Solved in Tutorial 4.
 
 An integer $n$ is called _even_ if $2\mid n$ and _odd_ otherwise. That is, even integers are of the form $2k$ for some $k\in\mathbb Z$. By the division algorithm, an odd integer can be written as $2k+1$ for some integer $k$. Convince yourself of this fact before moving forward.
 

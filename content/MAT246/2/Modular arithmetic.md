@@ -1,5 +1,5 @@
 ---
-title: "2.5 Modular arithmetic"
+title: "2.5. Modular arithmetic"
 draft: false
 ---
 ## Informal introduction

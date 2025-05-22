@@ -1,5 +1,5 @@
 ---
-title: "2.1. Construction of the integers"
+title: "2.1. Construction of Z"
 draft: false
 ---
 >[!warning] Note:
