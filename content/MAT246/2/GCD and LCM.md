@@ -19,6 +19,10 @@ draft: false
 >3. If $p$ is prime and $\gcd(p,n)>1$, then $p\mid n$. If, moreover $n$ is also prime, then necessarily $p=n$.
 >4. Different primes are always coprime. Show with an example that the converse does not hold. That is, show that coprime numbers need not be prime.
 
+>[!note] Exercise.
+>
+>Let $p,q$ be integers and $d$ their GCD. Then, $p/d$ and $q/d$ are relative primes.
+
 ## The Euclidean algorithm
 
 I now introduce one of many examples in mathematics where the statement of the theorem is not that important, but the proof is crucial to understand the material.

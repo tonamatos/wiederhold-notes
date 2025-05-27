@@ -37,8 +37,12 @@ Some general advice on learning mathematics can be found [[Advice|here]].
 
 ### 3. Infinity
 
-1. Gentle cardinal arithmetic
-
+1. [[ConstructionQ|Construction of the rationals]]
+2. [[Cardinal arithmetic|Gentle cardinal arithmetic]]
+3. [[Indexed families|Indexed families of sets]]
+4. [[Aleph_0|Aleph naught]]
+5. [[Continuum|The continuum]]
+6. [[Advanced problems]]
 
 # **June break & midterm**
 

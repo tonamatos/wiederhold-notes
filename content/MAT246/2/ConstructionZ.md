@@ -51,7 +51,7 @@ Since, by the above lemma, every positive integer can be written as $[(p,0)]_{\s
 
 >[!def] Definition (Addition in $\mathbb Z$).
 >
->1. Given two differences, $(m,n)$ and $(p,q)$, their _sum_ is $(m,n)+(p,q):=(m,+p,n+q)$.
+>1. Given two differences, $(m,n)$ and $(p,q)$, their _sum_ is $(m,n)+(p,q):=(m+p,n+q)$.
 >2. The sum of two integers is the class of the sum of its representatives.
 
 >[!question] Reflect.

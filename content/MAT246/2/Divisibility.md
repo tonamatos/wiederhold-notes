@@ -8,7 +8,11 @@ When reading this section, ask yourself why is this called an _algorithm_? You h
 
 >[!thm] Theorem (Division algorithm / Q-R formula).
 >
->Given are $a$ and $d\geq1$ integers. Then, there are unique $q,r\in\mathbb Z$ such that $a=dq+r$ and $0\leq r<d$.
+>Let $a$ and $d\geq1$ be integers. Then, there are $q,r\in\mathbb Z$ such that
+>	(1) $a=dq+r$; and
+>	(2) $0\leq r<d$.
+>
+>And any two integers $q$ and $r$ satisfying (1) and (2) above are unique.
 
 The integers $q$ and $r$ are called the _quotient_ and the _remainder_, respectively, of the division of $a$ by $d$. The next section is dedicated to the special case when $r=0$; here I denote $q$ by the symbol $\frac ad$.
 
@@ -16,8 +20,8 @@ The integers $q$ and $r$ are called the _quotient_ and the _remainder_, respecti
 # Most programming languages have built-in methods to compute these
 # The most common notation is:
 
-q = a//d
-r = a%d
+q = a // d # The double / means integer division, as opposed to float.
+r = a %  d # Read as "a mod d".
 ```
 
 >[!abstract] Examples.
@@ -31,7 +35,13 @@ r = a%d
 
 >[!proof] Proof of the division algorithm.
 >
->>[!fail] Removed during Quiz 3.
+>Let $a$ and $d\geq1$ be integers. I only focus on proving the existence of $q$ and $r$ in the case when $a$ is non negative, as this is the only part of the argument that requires induction. Concretely, the uniqueness argument should be done separately, and the general case when $a$ is an integer follows from the discussion presented here.
+>
+>The case when $a=0$ is clear, since $a=d\cdot0+0$ for any $d$. Now, assume that the statement holds for all naturals smaller than $a$ and consider the following cases.
+>
+>If $a<d$, then writing $a=d\cdot0+a$ fulfills the sought conditions, and no induction is needed.
+>
+>If, on the other hand, $d\leq a$, then applying the inductive hypothesis to the natural $a-d$, which is of course less than $a$, I get $q',r$ integers such that $a-d=dq'+r$. But then, $a=d(q'+1)+r$ so letting $q=q'+1$ I am done.
 
 This is another illustrative example of how strong induction can be useful. Attempting to prove this by weak induction, one runs into the problem of having to use the fact that $a$ can be written as $a=dq+r$ to accomplish the same for $a+1$, which is cumbersome and not intuitive.
 

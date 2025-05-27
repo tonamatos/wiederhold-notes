@@ -143,7 +143,28 @@ As I move to more complicated proofs by induction, one might run into the follow
 
 >[!proof]- Proof by "weak" induction:
 >
->>[!fail] Removed during PS1.
+>**Base case:** Indeed, notice that $30=15+15$.
+>
+>**Inductive hypothesis:** Suppose that $n=15s+10t+6u\geq30$.
+>
+>**Inductive step:** If $s>0$, then
+>
+>$$
+>15(s-1)+10(t+1)+6(u+1)=15s+10t+6u-15+10+6=n+1.
+>$$
+>
+>Suppose, on the other hand, that $s=0$. If $t=0$, then $n=6u$ where $u\geq5$ (because $n\geq30$). Thus, $n+1=6u+1=24+6(u-4)+1=15(1)+10(1)+6(u-4)$. Similarly, if $t=1$ and hence $n=10+6u$, I conclude that $u\geq4$ and write $n+1=10+24+6(u-4)+1=15(1)+10(2)+6(u-4)$. Therefore, from now on I assume that $t\geq2$.
+>
+>Now, I consider the possible values of $u$. If $u=0$, then $n=10t$ where $t\geq3$. I write $n+1=30+10(t-3)+1=15(1)+10(t-2)+6(1)$. The case when $u=1$ means that $n=10t+6$ with $t\geq3$. Hence, $n+1=30+10(t-3)+6+1=15(1)+10(t-2)+6(2)$. Similarly, whenever $u=2$, $n=10t+6(2)$ for $t\geq2$. Thus, $n+1=20+10(t-2)+6(2)+1=15(1)+10(t-2)+6(3)$. Also, if $u=3$, $n=10t+6(3)$ where $t\geq2$. So, $n+1=20+12+10(t-2)+6(1)+1=15(1)+10(t-2)+6(4)$. Hence, I assume that $u\geq4$, since otherwise I am done.
+>
+>Since I am assuming that $s=0$, $t\geq2$ and $u\geq4$, it follows that
+>
+>$$
+>n+1=10t+6u+1=44+10(t-2)+6(u-4)+1
+>$$
+>$$
+>=45+10(t-2)+6(u-4)=15(3)+10(t-2)+6(u-4).
+>$$
 
 ### The principle of strong mathematical induction
 
@@ -171,7 +192,11 @@ I illustrate the fact that, in many cases, you still need to provide the base ca
 
 >[!proof]- Proof of Claim by strong induction:
 >
->>[!fail] Removed for being in the problem set.
+>**Base cases:** $30=15+15$, $31=15+10+6$, $32=10+10+6+6$, $33=15+6+6+6$, $34=10+6+6+6+6$, $35=15+10+10$.
+>
+>**Inductive hypothesis:** Let $n\in\mathbb N$ with $n\geq 30$ and suppose that for all $k<n$ such that $k\geq 30$, there exist $s,t,u\in\mathbb N$ with $k=15s+10t+6u$.
+>
+>**Inductive step:** If $n<36$, then it falls into the base cases considered above. Otherwise, I apply the inductive hypothesis to $n-6\geq36-6=30$ to get $s,t,u$ such that $n-6=15s+10t+6u$. But then $n=15s+10t+6(u+1)$, and so I am done.
 
 ```python
 # Can you write a computer program that
