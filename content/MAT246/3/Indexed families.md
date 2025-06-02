@@ -1,6 +1,6 @@
 ---
 title: "3.3. Indexed families of sets"
-draft: true
+draft: false
 ---
 This section is meant to be used as a reference, rather than as lecture content. You may cite results from here for your problem sets or tests, but it is not expected you know all of this specifically.
 

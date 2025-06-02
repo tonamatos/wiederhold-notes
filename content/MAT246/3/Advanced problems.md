@@ -1,6 +1,6 @@
 ---
 title: "3.6. Advanced set theory problems"
-draft: true
+draft: false
 ---
 ### Functions
 

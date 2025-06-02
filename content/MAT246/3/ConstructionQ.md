@@ -1,6 +1,6 @@
 ---
 title: "3.1. Construction of Q"
-draft: true
+draft: false
 ---
 The construction of the rationals follows a very similar procedure to the [[ConstructionZ|construction of the integers]]. The main difference is that here, I am interested in learning how to _divide_ integers, rather than subtract naturals.
 

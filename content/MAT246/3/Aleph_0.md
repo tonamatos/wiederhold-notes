@@ -1,6 +1,6 @@
 ---
 title: "3.4. Aleph naught"
-draft: true
+draft: false
 ---
 ## Countability
 

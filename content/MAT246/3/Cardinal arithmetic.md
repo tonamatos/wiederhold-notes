@@ -1,6 +1,6 @@
 ---
 title: "3.2. Cardinal arithmetic"
-draft: true
+draft: false
 ---
 ## An algebra of functions
 

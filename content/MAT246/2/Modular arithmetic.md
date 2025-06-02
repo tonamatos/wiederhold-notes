@@ -178,7 +178,15 @@ Where to begin? A common technique in mathematics is to assume that a solution e
 
 >[!proof]+ Proof:
 >
->>[!fail] Removed during Quiz 4.
+>$\boxed{\Longrightarrow}$ Suppose that $x$ is a solution. Since $\gcd(a,m)\mid a$ and $m\mid b-ax$, linearity gives us $\gcd(a,m)\mid b$.
+>
+>$\boxed{\Longleftarrow}$ Now suppose that $\gcd(a,m)\mid b$. By [[GCD and LCM#Bézout's identity|Bézout's identity]], there are integers $s$ and $t$ such that
+>
+>$$
+>\gcd(a,m)=as+mt\equiv_mas.
+>$$ 
+>
+>The fact that $x:=\frac{sb}{\gcd(a,m)}$ is (an integer and) a solution is left to the reader.
 
 Notice that, by the above discussion, the congruence **always** has a solution when $a$ is invertible. Moreover, a solution is $a^{-1}b$, where $a^{-1}$ is the inverse of $a$ mod $m$.
 
