@@ -29,7 +29,8 @@ You are likely familiar with the following particular cases of union and interse
 >2. If $X=\{A_0,A_1,\dots,A_n\}$, then
 >
 >$$
->\bigcup X=\bigcup_{i\leq n}A_i\qquad\text{ and }\qquad\bigcap X=\bigcap_{i\leq n}A_i.$$
+>\bigcup X=\bigcup_{i\leq n}A_i\qquad\text{ and }\qquad\bigcap X=\bigcap_{i\leq n}A_i.
+>$$
 
 I am in need of more general notation. An _indexed family_ of sets is a set of the form $\mathcal F=\{x_\alpha:\alpha\in I\}$. $I$ is called the _indexing set_, and $\alpha$ is called the _index_.
 
@@ -61,50 +62,50 @@ It is clear that the product of two nonempty sets is always empty. However for t
 
 I will use the following meta-symbols $\clubsuit$ and $\spadesuit$. Let one of them by the union $\bigcup$ and the other one the intersection $\bigcap$. The theorems below are true for any nonempty indexed family of sets.
 
->[!thm] Generalized distributivity laws.
+>[!thm] General distributivity laws.
 >
 >
 >$$
->\mathop{\Huge\clubsuit}_{i\in I}\ \mathop{\Huge\spadesuit}_{j\in J}A_{i,j}=\mathop{\Huge\spadesuit}_{f\in\prod_{i\in I}J_i}\ \mathop{\Huge\clubsuit}_{j\in J}A_{i,f(i)};
+>\mathop{\Huge\clubsuit}\limits_{i\in I}\vphantom{\sum}\ \mathop{\Huge\spadesuit}\limits_{j\in J}\vphantom{\sum}A_{i,j}=\mathop{\Huge\spadesuit}\limits_{f\in\prod_{i\in I}J_i}\vphantom{\sum}\ \mathop{\Huge\clubsuit}\limits_{j\in J}\vphantom{\sum}A_{i,f(i)}
 >$$
 >
 >and
 >
 >$$
->\prod_{i\in I}\left(\mathop{\Huge\spadesuit}_{J_i}A_{i,j}\right)=\mathop{\Huge\spadesuit}_{f\in\prod_{i\in I}J_i}\left(\prod_{i\in I}A_{i,f(i)}\right).
+>\prod_{i\in I}\left(\mathop{\Huge\spadesuit}\limits_{j\in J_i}\vphantom{\sum}A_{i,j}\right)=\mathop{\Huge\spadesuit}\limits_{f\in\prod_{i\in I}J_i}\vphantom{\sum}\left(\prod_{i\in I}A_{i,f(i)}\right).
 >$$
 
->[!thm] Generalized commutativity laws.
+>[!thm] General commutativity laws.
 >
 >Let $\Phi:\mathcal F\to\mathcal F$ be a bijection. Then,
 >
 >$$
->\mathop{\Huge\spadesuit}\mathcal F=\mathop{\Huge\spadesuit}\Phi[\mathcal F].
+>\mathop{\Huge\spadesuit}\vphantom{\sum}\mathcal F=\mathop{\Huge\spadesuit}\vphantom{\sum}\Phi[\mathcal F].
 >$$
 >
 >Equivalently, if $\varphi:I\to I$ is a bijection, then
 >
 >$$
->\mathop{\Huge\spadesuit}_{i\in I}A_i=\mathop{\Huge\spadesuit}_{i\in I}A_{\varphi(i)}.
+>\mathop{\Huge\spadesuit}\limits_{i\in I}\vphantom{\sum}A_i=\mathop{\Huge\spadesuit}\limits_{i\in I}\vphantom{\sum}A_{\varphi(i)}.
 >$$
 
->[!thm] Generalized associativity laws.
+>[!thm] General associativity laws.
 >
 >Let $\sim$ be an equivalence relation on $\mathcal F$. Then,
 >
 >$$
->\mathop{\Huge\clubsuit}\mathcal F=\mathop{\Huge\clubsuit}\ \mathop{\Huge\clubsuit}\frac{\mathcal F}\sim.
+>\mathop{\Huge\clubsuit}\vphantom{\sum}\mathcal F=\mathop{\Huge\clubsuit}\vphantom{\sum}\ \mathop{\Huge\clubsuit}\vphantom{\sum}\frac{\mathcal F}\sim.
 >$$
 >
 >Equivalently, if $\sim$ is an equivalence relation on $I$,
 >
 >$$
->\mathop{\Huge\clubsuit}_{i\in I}A_i=\mathop{\Huge\clubsuit}_{C\in I/\sim}\ \mathop{\Huge\clubsuit}A_{i\in C}.
+>\mathop{\Huge\clubsuit}\limits_{i\in I}\vphantom{\sum}A_i=\mathop{\Huge\clubsuit}\limits_{C\in I/\sim}\vphantom{\sum}\ \mathop{\Huge\clubsuit}\vphantom{\sum}A_{i\in C}.
 >$$
 
 >[!thm] Laws for products.
 >
->All of the above are true when $\mathop{\Huge\clubsuit}$ is $\prod$, but both sides of every equality need to be enclosed in vertical bars (cardinality).
+>All of the above are true when $\Huge\clubsuit$ is $\prod$, but both sides of every equality need to be enclosed in vertical bars (cardinality).
 
 ## Basic exercises
 
@@ -132,4 +133,3 @@ I will use the following meta-symbols $\clubsuit$ and $\spadesuit$. Let one of t
 >
 >1. For any set $X$, $\bigcap\mathcal P(X)=\emptyset$.
 >2. $\bigcup X=\emptyset$ if and only if $X=\emptyset$ or $A\in X$ implies $A=\emptyset$ for all $A$.
-
