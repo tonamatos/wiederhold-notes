@@ -80,7 +80,7 @@ I will use the following meta-symbols $\clubsuit$ and $\spadesuit$. Let one of t
 >Let $\Phi:\mathcal F\to\mathcal F$ be a bijection. Then,
 >
 >$$
->\mathop{\Huge\spadesuit}\vphantom{\sum}\mathcal F=\mathop{\Huge\spadesuit}\vphantom{\sum}\Phi[\mathcal F].
+>\mathop{\Huge\spadesuit}\limits_{}\vphantom{\sum}\mathcal F=\mathop{\Huge\spadesuit}\limits_{}\vphantom{\sum}\Phi[\mathcal F].
 >$$
 >
 >Equivalently, if $\varphi:I\to I$ is a bijection, then
@@ -94,13 +94,13 @@ I will use the following meta-symbols $\clubsuit$ and $\spadesuit$. Let one of t
 >Let $\sim$ be an equivalence relation on $\mathcal F$. Then,
 >
 >$$
->\mathop{\Huge\clubsuit}\vphantom{\sum}\mathcal F=\mathop{\Huge\clubsuit}\vphantom{\sum}\ \mathop{\Huge\clubsuit}\vphantom{\sum}\frac{\mathcal F}\sim.
+>\mathop{\Huge\clubsuit}\limits_{}\vphantom{\sum}\mathcal F=\mathop{\Huge\clubsuit}\limits_{}\vphantom{\sum}\ \mathop{\Huge\clubsuit}\limits_{}\vphantom{\sum}\frac{\mathcal F}\sim.
 >$$
 >
 >Equivalently, if $\sim$ is an equivalence relation on $I$,
 >
 >$$
->\mathop{\Huge\clubsuit}\limits_{i\in I}\vphantom{\sum}A_i=\mathop{\Huge\clubsuit}\limits_{C\in I/\sim}\vphantom{\sum}\ \mathop{\Huge\clubsuit}\vphantom{\sum}A_{i\in C}.
+>\mathop{\Huge\clubsuit}\limits_{i\in I}\vphantom{\sum}A_i=\mathop{\Huge\clubsuit}\limits_{C\in I/\sim}\vphantom{\sum}\ \mathop{\Huge\clubsuit}\limits_{i\in C}\vphantom{\sum}A_i.
 >$$
 
 >[!thm] Laws for products.
