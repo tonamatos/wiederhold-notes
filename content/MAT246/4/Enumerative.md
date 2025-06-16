@@ -18,7 +18,7 @@ A man enters an elevator with six other people. As he reaches to press the butto
 
 The following important fact can be formalized using the language of [[Functions#Injectivity and surjectivity|injective functions]].
 
->[!thm] Theorem (Pigeonhole principle).
+>[!thm] Pigeonhole principle.
 >
 >If there are $n$ pigeons to be distributed among fewer than $n$ pigeonholes, then at least one pigeonhole will have at least two pigeons.
 

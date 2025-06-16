@@ -79,7 +79,23 @@ A subset $A$ of a set $B$ is called a _proper_ subset, denoted $A\subsetneq B$ i
 
 >[!proof]+ Proof:
 >
->>[!fail] Removed during Quiz 5.
+>By induction on $n$.
+>
+>The base case $n=0$ is vacuously true. Suppose that $n>0$ and let $N:=\{0,\dots,n\}$ and $N':=N\setminus\{n\}=\{0,\dots,n-1\}$.
+>
+>By contrapositive, suppose that $f:N\to X\subseteq N$ is a bijection. If $n\notin X$, then $f|_{N'}$ is a bijection onto $X$. But the domain has size $n-1$, so by the inductive hypothesis, $N=X$.
+>
+>If, on the other hand, $n\in X$, then define $g:N'\to X\setminus\{n\}$ by the rule
+>
+>$$
+>g(i):=
+>\begin{cases}
+>f(i) & i\neq f^{-1}(n)\\
+>f(n) & i=f^{-1}(n).
+>\end{cases}
+>$$
+>
+>$g$ is a bijection, so by inductive hypothesis, $N'=X\setminus\{n\}$. Adding the element $n$ to both sets, I get the sought equality.
 
 >[!thm] Corollary.
 >
