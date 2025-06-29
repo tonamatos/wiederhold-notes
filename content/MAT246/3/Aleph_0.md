@@ -172,5 +172,5 @@ An exercise worth writing down before continuing is below.
 >\{x\in X:x\notin f(x)\}
 >$$
 >
->is a subset of $X$ and hence an element of $\mathcal P(X)$. Now use the idea behind [[Introduction#Russel's paradox|Russel's paradox]] to prove that this set cannot be in the image of $f$.
+>is a subset of $X$ and hence an element of $\mathcal P(X)$. Now use the idea behind [[Teaching/MAT246 Concepts in Abstract Math/2025 Summer/1/Introduction#Russel's paradox|Russel's paradox]] to prove that this set cannot be in the image of $f$.
 

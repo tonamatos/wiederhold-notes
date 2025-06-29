@@ -118,7 +118,7 @@ Find the _contrapositive_ of the following implications.
 >
 >Prove that there is a function $f:\{1,\dots,n\}\to X$ such that
 >
->2. for all $1\leq i<j\leq n,\quad f(i)\rightarrowtail f(j)$.
+>2. for all $1\leq i<n,\quad f(i)\rightarrowtail f(i+1)$.
 >
 >>[!hint]- Hint.
 >>

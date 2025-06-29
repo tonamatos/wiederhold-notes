@@ -17,7 +17,7 @@ Some general advice on learning mathematics can be found [[Advice|here]].
 
 ### 1. Foundations
 
-1. [[Introduction]]
+1. [[Teaching/MAT246 Concepts in Abstract Math/2025 Summer/1/Introduction]]
 2. [[Elementary set theory]]
 3. [[Relations]]
 4. [[Functions]]
@@ -46,11 +46,13 @@ Some general advice on learning mathematics can be found [[Advice|here]].
 
 # **June break & midterm**
 
-
 ### 4. Combinatorics
-
-1. Enumerative combinatorics
-2. Graph theory
+#### Enumerative combinatorics
+1. [[Enumerative|Permutations and combinations]]
+2. [[Pigeonhole|The pigeonhole principle]]
+3. [[Counting|Counting principles]]
+#### Graph theory
+4. [[Graphs]]
 
 ### 5. Topology
 
