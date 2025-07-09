@@ -100,17 +100,19 @@ You will need this technical lemma to complete the proof:
 >=\sum_{0<s\leq n+1}\sum_{\tau\in[n]^s}(-1)^{|\tau|+1}\left|\bigcap_{i\in\tau}A_i\right|-\sum_{0<s\leq n+1}\sum_{\tau\in[n]^{s-1}}(-1)^{|\tau|+1}\left|\bigcap_{i\in\tau}A_i\cap A_n\right|
 >$$
 >
+>The first double sum is just
+>
 >$$
->=\sum_{\emptyset\subsetneq\tau\subseteq n}(-1)^{|\tau|+1}\left|\bigcap_{i\in\tau}A_i\right|-\sum_{0<s\leq n+1}\sum_{\tau\in[n]^{s-1}}(-1)^{|\tau|+1}\left|\left(\bigcap_{i\in\tau}A_i\right)\cap A_n\right|
+>\sum_{\emptyset\subsetneq\tau\subseteq n}(-1)^{|\tau|+1}\left|\bigcap_{i\in\tau}A_i\right|;
 >$$
 >
->In the latter double sum, the indexing goes from $\tau\in[n]^0=\{\emptyset\}$ to $\tau\in[n]^n=\{n\}$. When $\tau=\emptyset$, the intersection is just $A_n$; therefore the double sum may be rewritten as
+>and the latter double sum, the indexing goes from $\tau\in[n]^0=\{\emptyset\}$ to $\tau\in[n]^n=\{n\}$. When $\tau=\emptyset$, the intersection is just $A_n$; therefore the second double sum may be rewritten as
 >
 >$$
 >\sum_{\emptyset\subsetneq\tau\subseteq n}(-1)^{|\tau|+1}\left|\bigcap_{i\in\tau}A_i\cap A_n\right|-|A_n|.
 >$$
 >
->Both sides are equal, hence the theorem is proved.
+>Combining both, I see that they are equal, hence the theorem is proved.
 
 >[!hint]- Alternative proof.
 >
