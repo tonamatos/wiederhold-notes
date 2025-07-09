@@ -13,8 +13,9 @@ In how many ways can you choose **two** objects from $X$? I have to be more spec
 
 In general, without further specification, there are $|X^2|=|X|^2=4^2=16$ ways to make a selection. But maybe not all of them are relevant for your purposes.
 
-| AA  | **AB** | **AC** | **AD** |
+|     |        |        |        |
 | --- | ------ | ------ | ------ |
+| AA  | **AB** | **AC** | **AD** |
 | BA  | BB     | **BC** | **BD** |
 | CA  | CB     | CC     | **CD** |
 | DA  | DB     | DC     | DD     |
@@ -22,29 +23,29 @@ The diagonal $AA,BB,CC,DD$ contains the repeated elements. The **highlighted** s
 
 >[!def] Definition.
 >
->Denote by $PR_n^k$ the number of choices of $k$ elements from a set of size $n$ with repetitions and with order.
+>Denote by $PR_k^n$ the number of choices of $k$ elements from a set of size $n$ with repetitions and with order.
 >
->Denote by $P_n^k$ the number of choices of $k$ elements from a set of size $n$ with no repetitions and with order.
+>Denote by $P_k^n$ the number of choices of $k$ elements from a set of size $n$ with no repetitions and with order.
 
-Based in my previous discussion, $PR_n^k=n^k$.
+Based in my previous discussion, $PR_k^n=n^k$.
 
 >[!thm] Theorem.
 >
 >For $k\leq n$,
 >
 >$$
->P_n^k=\frac{n!}{(n-k)!}
+>P_k^n=\frac{n!}{(n-k)!}
 >$$
 
 >[!proof]+ Informal proof:
 >
 >Proceed by induction on $n$. The base case $n=0$ is clear since $0!=1$.
 >
->The inductive step follows from the observation that $P_n^k=n\cdot P_{n-1}^{k-1}$. Indeed, for every choice counted by the left hand size, I can fix the first element which has $n$ possible values. The remaining elements are chosen from a set of size $n-1$ (since there is no repetition) and there are $k-1$ of them. Thus the product of $n$ and this other amount gives me the total number of possible choices.
+>The inductive step follows from the observation that $P_k^n=n\cdot P_{k-1}^{n-1}$. Indeed, for every choice counted by the left hand size, I can fix the first element which has $n$ possible values. The remaining elements are chosen from a set of size $n-1$ (since there is no repetition) and there are $k-1$ of them. Thus the product of $n$ and this other amount gives me the total number of possible choices.
 
 >[!warning] Note:
 >
->Formalize the above proof using a bijection between the permutations of $n$ and a set of size $P_n^k(n-k)!$. An example of such a proof is seen below and you are expected to know how to write these types of formal proofs.
+>Formalize the above proof using a bijection between the permutations of $n$ and a set of size $P_k^n(n-k)!$. An example of such a proof is seen below and you are expected to know how to write these types of formal proofs.
 
 >[!thm] Corollary.
 >
@@ -64,7 +65,7 @@ Let $X$ be a set and $\lambda$ a cardinal (usually a natural number). I will den
 
 >[!abstract] Examples.
 >
->1. ${n\choose k}=|\{n\}|=1$
+>1. ${n\choose n}=|\{n\}|=1$
 >2. ${n\choose 0}=|\{\emptyset\}|=1$
 >3. when $k>n$, ${n\choose k}=0$
 >4. ${n\choose 1}=|\{\{k\}:k<n\}|=n$
@@ -98,7 +99,7 @@ You are expected to know how to prove the following exercises from the definitio
 >\beth:=\{(\varphi(a_1),\dots,\varphi(a_k)):\varphi\in\Phi_A,\ A\in[n]^k\}
 >$$
 >
->has size $P_n^k$. It is straightforward to show that, for any fixed $A$ (since they all have the same size), $|\beth|=|[n]^k|\cdot|\Phi_A|={n\choose k}k!$. The result follows.
+>has size $P_k^n$. It is straightforward to show that, for any fixed $A$ (since they all have the same size), $|\beth|=|[n]^k|\cdot|\Phi_A|={n\choose k}k!$. The result follows.
 
 >[!question] Reflect.
 >

@@ -44,7 +44,17 @@ All sets are assumed to be finite in the section.
 >\left|\bigcup_{i<n}A_i\right|=\sum_{\emptyset\subsetneq\tau\subseteq n}(-1)^{|\tau|+1}\left|\bigcap_{i\in\tau}A_i\right|.
 >$$
 
->[!proof]- Proof:
+You will need this technical lemma to complete the proof:
+
+>[!thm] Lemma.
+>
+>For $0<s\leq n+1$,
+>
+>$$
+>\sum_{\tau\in[n+1]^s}\left|\bigcap_{i\in\tau}A_i\right|=\sum_{\tau\in[n]^s}\left|\bigcap_{i\in\tau}A_i\right|+\sum_{\tau\in[n]^{s-1}}\left|\bigcap_{i\in\tau}A_i\cap A_n\right|.
+>$$
+
+>[!proof]- Proof of the inclusion-exclusion principle:
 >
 >>[!fail] Removed during quiz.
 
@@ -54,6 +64,19 @@ $$
 |A_0\cup A_1\cup A_2|=|A_0|+|A_1|+|A_2|-|A_0\cap A_1|-|A_0\cap A_2|-|A_1\cap A_2|+|A_0\cap A_1\cap A_2|.
 $$
 
+Just as a sanity check, I write the following "obvious" fact, which can be of course proved using much simpler methods.
+
+>[!thm] Corollary.
+>
+>Assume, in addition to the hypotheses of the inclusion-exclusion principle, that the sets are pairwise disjoint. Then,
+>
+>$$
+>\left|\bigcup_{i<n}A_i\right|=\sum_{k<n}|A_i|.
+>$$
+
+>[!proof]+ Proof:
+>
+>If the sets are pairwise disjoint, all intersections of two or more are empty. Therefore, only the cases when $\tau$ are singleton sets contribute to the sum, which simplifies to the above.
 ### Application: Euler's totient function
 
 Let $\varphi(n)$ denote the number of invertible elements of $\mathbb Z_n$. In Chapter 2, I proved that an integer $k$ is invertible mod $n$ if and only if $k\perp n$. I will show you a formula for computing $\varphi(n)$ when the prime factorization of $n$ is known.
@@ -68,7 +91,7 @@ $$
 
 ### Application: derangements
 
-In many situation, the above formula may be simplified. One such example is when the summand $\left|\bigcap_{i\in\tau}A_i\right|$ depends only on the size of $\tau$ (and not the particular elements of $\tau$).
+In many situations, the above formula may be simplified. One such example is when the summand $\left|\bigcap_{i\in\tau}A_i\right|$ depends only on the size of $\tau$ (and not the particular elements of $\tau$).
 
 >[!thm] Corollary.
 >
@@ -90,9 +113,29 @@ In many situation, the above formula may be simplified. One such example is when
 >=\sum_{k=1}^n\sum_{\tau\in[n]^k}(-1)^{k+1}\omega(k)=\sum_{k=1}^n(-1)^{k+1}{n\choose k}\omega(k).
 >$$
 
-A _derangement_ is a permutation where no fixed points. That is, let $\varphi\in\Phi_X$ be a bijection $X\to X$. Then $\varphi$ is called a _derangement_ if for all $x\in X$, $\varphi(x)\neq x$. How many of the $|X|!$ permutations are derangements?
+A _derangement_ is a permutation with no fixed points. That is, let $\varphi\in\Phi_X$ be a bijection $X\to X$. Then $\varphi$ is called a _derangement_ if for all $x\in X$, $\varphi(x)\neq x$. How many of the $|X|!$ permutations are derangements? I will denote the number of derangements of a set of size $n$ by $!n$. Thus obviously $!n\leq n!$.
 
->[!info] To be added depending on progress.
+>[!note] Exercise.
+>
+>Show that $!n=(n-1)(!(n-1)+!(n-2))$ by using a combinatorial argument, that is, without using the formula below.
+
+>[!thm] Derangement formula.
+>
+>$$
+>!n=\sum_{k=0}^n\frac{(-1)^k\ n!}{k!}.
+>$$
+
+From Calculus, I know that the McLaurin series of the exponential function gives me
+
+$$
+e^x=\sum_{k=0}^\infty\frac{x^k}{k!},
+$$
+
+and thus $1/e\approx0.37$ is a good approximation of the probability that a random permutation of $n$ objects, for large $n$, is a derangement. This limit converges rather quickly, and so with high probability, a random shuffle of cards will leave at least one card in the same place, for instance.
+
+>[!note] Exercise.
+>
+>Show that $n!=\sum_{k=0}^n{n\choose k}!k$ and give a combinatorial interpretation of it.
 
 ## The stars and bars theorem
 

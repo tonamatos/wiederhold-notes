@@ -43,6 +43,7 @@ Perhaps the result that gives this theory its name is the one below.
 >Prove the above theorem for $n=r=2$.
 >
 >>[!hint]- Hint.
+>>
 >>Use induction on $m$. The case when $m=2$ is trivial. The case when $m=3$ is the Party problem from before (thus $N=6$ works). You need to repeat this idea by dividing $[N]^2$ into two pieces, like in the Party problem, but then each of those pieces needs to be further split into two.
 
 ## Graphs
@@ -109,7 +110,7 @@ Say a vertex is _odd_ if it has odd degree.
 
 >[!def] Definition.
 >
->Two graphs $G$ and $H$ are _isomorphic_, denoted $G\simeq H$, is there is a bijection $\varphi:V(G)\to V(H)$ such that for all $u,v\in V(G)$, $uv\in E(G)$ if and only if $\varphi(u)\varphi(v)\in E(H)$. Such a function is called an _isomorphism_. If $G=H$, then $\varphi$ is called an _automorphism_.
+>Two graphs $G$ and $H$ are _isomorphic_, denoted $G\simeq H$, if there is a bijection $\varphi:V(G)\to V(H)$ such that for all $u,v\in V(G)$, $uv\in E(G)$ if and only if $\varphi(u)\varphi(v)\in E(H)$. Such a function is called an _isomorphism_. If $G=H$, then $\varphi$ is called an _automorphism_.
 >
 >The _group_ (I didn't define group in this course, but calling this a set is sufficient for my purposes) of all automorphisms of $G$ is denoted by $\operatorname{Aut}(G)$.
 
@@ -129,7 +130,7 @@ Say a vertex is _odd_ if it has odd degree.
 
 >[!note] Exercise.
 >
->Let $G$ be a graph. The _complement_ of $G$, denoted $\overline G$ is the graph on the same vertex set where $E(\overline G)=\{uv,uv\notin E(G)\}$.
+>Let $G$ be a graph. The _complement_ of $G$, denoted $\overline G$ is the graph on the same vertex set where $E(\overline G)=\{uv:uv\notin E(G)\}$.
 >
 >Prove that $\operatorname{Aut}(G)=\operatorname{Aut}(\overline G)$.
 
@@ -184,14 +185,17 @@ A graph $G$ is called _asymmetric_ if $|\operatorname{Aut}(G)|=1$.
 
 >[!note] Exercise.
 >
->Prove that any graph isomorphic to a connected graph is also isomorphic.
+>Prove that any graph isomorphic to a connected graph is also connected.
 >
 >Any graph isomorphic to a tree is also a tree.
->
 
 >[!thm] Theorem.
 >
 >Any finite tree with at least two vertices has at least two vertices of degree 1.
+
+>[!note] Exercise.
+>
+>Is the above theorem true if you remove the word 'finite'?
 
 >[!thm] Theorem.
 >

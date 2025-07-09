@@ -69,8 +69,6 @@ In a perhaps more mathematical language:
 >1. Prove that there exist distinct $a,b\in X$ such that $a$ divides $b$.
 >2. Show, with an example, that the conclusion is false if $X$ has size $n$ instead.
 
-Now test your understanding by solving the following exercise.
-
 >[!note] Exercise.
 >
 >A bridge club has $10$ members. Every day, four members of the club get together and play one game of bridge. Prove that after two years, there is some particular set of four members that has played at least four games of bridge.
@@ -79,8 +77,48 @@ Now test your understanding by solving the following exercise.
 >>
 >>There are ${10\choose 4}=210$ ways of picking four members of the club. If at most three of these choices repeat in the $365\cdot2=730$ days, then there were at most $3\cdot210=630<730$ matches, which is impossible if they play every day. Hence, some choice of four players repeated at least four times.
 
+## Generalized pigeonhole principles
+
+>[!note] Exercise.
+>
+>Show that if more than $mr$ elements are put into $r$ sets, some set contains $m$ elements.
+
+>[!note] Exercise.
+>
+>Among any 200 positive integers, there are 29 of them that are pairwise congruent mod 7.
+
+>[!note] Exercise.
+>
+>Show that if $a_1,\dots,a_n$ are positive integers and more than $(a_1+\cdots+a_n)-n$ pigeons are put in $n$ pigeonhole, for some $i$, the $i$th pigeonhole contains at least $a_i$ pigeons.
+
 >[!note] Exercise.
 >
 >Prove this generalized pigeonhole principle:
 >
 >If you put $Nk+1$ pigeons into $N$ pigeonholes, one hole has $k+1$ pigeons.
+
+>[!note] Exercise.
+>
+>Every point on the plane $\mathbb R^2$ is colored red or blue. Prove that there are always two points exactly one unit apart that have the same color.
+
+>[!note] Exercise.
+>
+>Any five points placed inside a unit square contain a pair of points at distance at most $\sqrt2/2$.
+
+>[!note] Exercise.
+>
+>Any subset of $\{1,2,\dots,2n\}$ of size at least $n+1$ contains two relative primes.
+
+>[!note] Exercise.
+>
+>Among any $n+1$ positive integers, two of them have a distance divisible by $n$.
+
+>[!note] **Hard** exercise (special case of the [Erdős–Szekeres theorem](https://en.wikipedia.org/wiki/Erd%C5%91s%E2%80%93Szekeres_theorem)).
+>
+>Prove that any sequence of $n^2+1$ different naturals contains a monotonic subsequence of length $n+1$.
+>
+>For every $n$, construct a sequence of $n^2$ naturals containing no monotonic subsequence of length $n+1$.
+
+>[!note] **Hard** exercise (IMO 1972).
+>
+>From a set of ten two-digit decimal numbers, two disjoint subsets have the same sum.

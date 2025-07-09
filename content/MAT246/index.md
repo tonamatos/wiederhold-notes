@@ -46,6 +46,8 @@ Some general advice on learning mathematics can be found [[Advice|here]].
 
 # **June break & midterm**
 
+[[midterm_solutions|Midterm solutions]]
+
 ### 4. Combinatorics
 #### Enumerative combinatorics
 1. [[Enumerative|Permutations and combinations]]
