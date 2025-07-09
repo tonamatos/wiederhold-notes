@@ -48,15 +48,82 @@ You will need this technical lemma to complete the proof:
 
 >[!thm] Lemma.
 >
->For $0<s\leq n+1$,
+>For $0<s\leq n$,
 >
 >$$
 >\sum_{\tau\in[n+1]^s}\left|\bigcap_{i\in\tau}A_i\right|=\sum_{\tau\in[n]^s}\left|\bigcap_{i\in\tau}A_i\right|+\sum_{\tau\in[n]^{s-1}}\left|\bigcap_{i\in\tau}A_i\cap A_n\right|.
 >$$
 
->[!proof]- Proof of the inclusion-exclusion principle:
+>[!proof]+ Proof of lemma:
 >
->>[!fail] Removed during quiz.
+>By associativity and commutativity of the intersection,
+>
+>$$
+>\sum_{\tau\in[n+1]^s}\left|\bigcap_{i\in\tau}A_i\right|=\sum_{\substack{\tau\in[n+1]^s\\n\notin\tau}}\left|\bigcap_{i\in\tau}A_i\right|+\sum_{\substack{\tau\in[n+1]^s\\n\in\tau}}\left|\bigcap_{i\in\tau}A_i\right|
+>$$
+>
+>$$
+>=\sum_{\tau\in[n]^s}\left|\bigcap_{i\in\tau}A_i\right|+\sum_{\tau\in[n]^{s-1}}\left|\bigcap_{i\in\tau\cup\{n\}}A_i\right|=\sum_{\tau\in[n]^s}\left|\bigcap_{i\in\tau}A_i\right|+\sum_{\tau\in[n]^{s-1}}\left|\bigcap_{i\in\tau}A_i\cap A_n\right|.
+>$$
+
+>[!proof]+ Proof of the inclusion-exclusion principle:
+>
+>By induction on $n$. The case when $n=1$ is trivial. The case when $n=2$ is the corollary at the beginning of this section.
+>
+>I will assume the inclusion-exclusion principle holds for any family of finite sets of size $n$. Now let $A_0,\dots,A_n$ be an arbitrary family of $n+1$ finite sets.
+>
+>On the one hand, expanding the left-hand side and using the inductive hypothesis twice:
+>
+>$$
+>\left|\bigcup_{i\leq n}A_i\right|=\left|\bigcup_{i<n}A_i\right|+|A_n|-\left|\bigcup_{i<n}A_i\cap A_n\right|
+>$$
+>
+>$$
+>=\sum_{\emptyset\subsetneq\tau\subseteq n}(-1)^{|\tau|+1}\left|\bigcap_{i\in\tau}A_i\right|+|A_n|-\sum_{\emptyset\subsetneq\tau\subseteq n}(-1)^{|\tau|+1}\left|\bigcap_{i\in\tau}A_i\cap A_n\right|
+>$$
+>
+>On the other hand, expanding the right-hand side by ordering the sum by the size of $\tau$, I apply the lemma above and simplify:
+>
+>$$
+>\sum_{\emptyset\subsetneq\tau\subseteq n+1}(-1)^{|\tau|+1}\left|\bigcap_{i\in\tau}A_i\right|=\sum_{0<s\leq n+1}\sum_{\tau\in[n+1]^s}(-1)^{s+1}\left|\bigcap_{i\in\tau}A_i\right|=\sum_{0<s\leq n+1}\left((-1)^{s+1}\sum_{\tau\in[n+1]^s}\left|\bigcap_{i\in\tau}A_i\right|\right)
+>$$
+>
+>$$
+>=\sum_{0<s\leq n+1}\left((-1)^{s+1}\sum_{\tau\in[n]^s}\left|\bigcap_{i\in\tau}A_i\right|-(-1)^s\sum_{\tau\in[n]^{s-1}}\left|\bigcap_{i\in\tau}A_i\cap A_n\right|\right)
+>$$
+>
+>$$
+>=\sum_{0<s\leq n+1}\left(\sum_{\tau\in[n]^s}(-1)^{|\tau|+1}\left|\bigcap_{i\in\tau}A_i\right|-\sum_{\tau\in[n]^{s-1}}(-1)^{|\tau|+1}\left|\bigcap_{i\in\tau}A_i\cap A_n\right|\right)
+>$$
+>
+>$$
+>=\sum_{0<s\leq n+1}\sum_{\tau\in[n]^s}(-1)^{|\tau|+1}\left|\bigcap_{i\in\tau}A_i\right|-\sum_{0<s\leq n+1}\sum_{\tau\in[n]^{s-1}}(-1)^{|\tau|+1}\left|\bigcap_{i\in\tau}A_i\cap A_n\right|
+>$$
+>
+>$$
+>=\sum_{\emptyset\subsetneq\tau\subseteq n}(-1)^{|\tau|+1}\left|\bigcap_{i\in\tau}A_i\right|-\sum_{0<s\leq n+1}\sum_{\tau\in[n]^{s-1}}(-1)^{|\tau|+1}\left|\left(\bigcap_{i\in\tau}A_i\right)\cap A_n\right|
+>$$
+>
+>In the latter double sum, the indexing goes from $\tau\in[n]^0=\{\emptyset\}$ to $\tau\in[n]^n=\{n\}$. When $\tau=\emptyset$, the intersection is just $A_n$; therefore the double sum may be rewritten as
+>
+>$$
+>\sum_{\emptyset\subsetneq\tau\subseteq n}(-1)^{|\tau|+1}\left|\bigcap_{i\in\tau}A_i\cap A_n\right|-|A_n|.
+>$$
+>
+>Both sides are equal, hence the theorem is proved.
+
+>[!hint]- Alternative proof.
+>
+>Let $B_i:=A_i\setminus A_n$ for $i<n$ and notice that $\bigcup_{i\leq n}A_i=\bigcup_{i<n}B_i\cup A_n$ which is a disjoint union and thus $\left|\bigcup_{i\leq n}A_i\right|=\left|\bigcup_{i<n}B_i\right|+|A_n|$. Moreover,
+>
+>$$
+>\bigcap_{i\in\tau}B_i=\bigcap_{i\in\tau}A_i\setminus\bigcap_{i\in\tau}(A_i\cap A_n).
+>$$
+>
+>>[!note] Exercise.
+>>
+>>Complete the proof.
+
 
 For example, for three sets, we have $n=\{0,1,2\}$, so the right-hand sum iterates over three singletons, three complements of singletons and $n$ (there are seven nonempty subsets of $n$ in this case). Therefore,
 
