@@ -140,7 +140,7 @@ Just as a sanity check, I write the following "obvious" fact, which can be of co
 >Assume, in addition to the hypotheses of the inclusion-exclusion principle, that the sets are pairwise disjoint. Then,
 >
 >$$
->\left|\bigcup_{i<n}A_i\right|=\sum_{k<n}|A_i|.
+>\left|\bigcup_{i<n}A_i\right|=\sum_{i<n}|A_i|.
 >$$
 
 >[!proof]+ Proof:
