@@ -58,11 +58,12 @@ Some general advice on learning mathematics can be found [[Advice|here]].
 
 ### 5. Topology
 
-1. 
+1. [[Metric spaces]]
+2. [[Compactness]]
 
 ### 6. Complex Numbers
 
-1. 
+1. [[Complex numbers]]
 
 ---
 

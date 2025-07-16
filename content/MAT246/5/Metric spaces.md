@@ -14,20 +14,34 @@ Topology plays in important role in one of the two learning objectives for this 
 >3. $d(x,y)=d(y,x)$ (_Symmetry_); and
 >4. $d(x,z)\leq d(x,y)+d(y,z)$ (_Triangle inequality_).
 
-For example, if $G$ is a connected graph, define $d(u,v)$ as the minimum length of a path with endpoints $u$ and $v$. $(G,d)$ is then a metric space.
+### Example: graphs
 
-Another example: $\mathbb R^n$ with the Euclidean metric given by
+If $G$ is a connected graph, define $d(u,v)$ as the smallest length of a path with endpoints $u$ and $v$. $(G,d)$ is then a metric space.
+
+For a more concrete example, define in any component $B$ of the hypercube $B_\infty$, where $s$ and $t$ are countably infinite binary sequences, $h(s,t)$ as the number of coordinates that $s$ and $t$ differ in. That is,
+
+$$
+h(s,t):=|\{n\in\mathbb N:s(n)\neq t(n)\}|.
+$$
+$(B,h)$ is then a metric space. This particular $h$ is known as the [Hamming distance](https://en.wikipedia.org/wiki/Hamming_distance), and it plays an important role in error-correcting codes.
+
+### Example: the reals
+
+Another example: $\mathbb R^n$ with the _Euclidean metric_ given by
 
 $$
 d(\vec x,\vec y):=\sqrt{\sum_{i=1}^n(x_i-y_i)^2}.
 $$
-When $n=1$, this is just $d(x,y)=|x-y|$. This is not the only metric that works for $\mathbb R^n$. For example,
+When $n=1$, this is just $d(x,y)=|x-y|$.
+
+For a different example,
 
 $$
-d(\vec x,\vec y):=\sum_{i=1}^n|x_i-y_i|
+d'(\vec x,\vec y):=\sum_{i=1}^n|x_i-y_i|
 $$
 
-gives a different metric space, but all of these metrics will give rise to the same _topology_, which is sort of the point. I don't really care about a specific number that measures the distance, I just want to distinguish objects that are similar or _close_ from those that are different or distant.
+is sometimes referred to as the _taxicab metric_. To see why, draw $\mathbb R^2$ as a grid and imagine roads connecting the lattice points.
+
 ## Open and closed sets
 
 >[!warning] Note:
@@ -91,6 +105,25 @@ The following theorem is the actual definition of an abstract _topology_, which 
 >
 >>[!info] In lectures.
 
+From now on, I will denote the collection of all open subsets of $X$ by $\tau(X)$. This set is typically called the _topology_ of $X$.
+
+An important connection between open and closed sets is the following.
+
+>[!thm] Proposition.
+>
+>A set $A$ is open if and only if $\mathbb R^n\setminus A$ is closed.
+
+>[!proof] Proved in PS5-1.
+
+Another easy-to-prove property of metric spaces is seen below.
+
+>[!thm] Theorem ("Metric spaces have the _Hausdorff separation property_").
+>
+>For any distinct $x,y\in X$, there are disjoint open balls $B$ and $B'$ such that $x\in B$ and $y\in B'$.
+
+>[!proof]+ Proof:
+>
+>Since $x\neq y$, $r:=\frac12d(x,y)>0$. Thus $B(x,r)$ and $B(y,r)$ have the desired property.
 
 ## Sequences
 
@@ -108,6 +141,22 @@ Most of the theory of metric spaces involves sequences. Since I want to transcen
 >
 >I will prove that $\lim_{n\to\infty}\frac1n=0$. Let $r>0$, then, by the Archimedean property, there is an $N\in\mathbb N$ such that $N>\frac1n$. But then $\frac1n<r$, so obviously $\frac1n\in B(0,r)$ for all $n\geq N$.
 
->[!thm] Theorem ("In metric spaces, _sequential closure_ and closure is the same").
+>[!note] Exercise.
+>
+>If $A$ is a closed set and $\{x_n\}_n\subseteq A$ has a limit $x$, then $x\in A$.
+
+>[!thm] Theorem ("In metric spaces, _sequential closure_ and closure are the same").
 >
 >For any set $A\subseteq X$, $\overline A=\{x\in X:\exists\{x_n\}_n\subseteq A\ \lim_{n\to\infty}x_n=x\}$.
+
+>[!proof]+ Proof:
+>
+>$\boxed\subseteq$ Let $x\in\overline A$. For every natural $n$, pick $x_n\in A\cap B(x,\frac1{n+1})$, then clearly $\{x_n\}_n\subseteq A$.
+>
+>>[!note] Exercise.
+>>
+>>Verify that $\lim_{n\to\infty}x_n=x$.
+>
+>Therefore, $x$ is a member of the set on the right-hand side.
+>
+>$\boxed\supseteq$ Suppose that $\lim_{n\to\infty}x_n=x$ for some $\{x_n\}_n\subseteq A$. Let $r>0$. Then, for some large natural $N$, $x_N\in B(x,r)$. Clearly this implies that $B(x,r)\cap A\neq\emptyset$ and so $x\in\overline A$.

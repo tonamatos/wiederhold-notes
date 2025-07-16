@@ -324,3 +324,83 @@ A graph $G$ is called _asymmetric_ if $|\operatorname{Aut}(G)|=1$. Equivalently,
 >By induction on the order of the tree. Clearly, if $n=1$, the result holds.
 >
 >If $n\geq2$, then $T$ contains a vertex of degree 1 $v$. Then $T-v$ must satisfy the inductive hypothesis, but this new tree has exactly one vertex and one edge fewer than $T$. so the result follows.
+
+>[!note] **Hard** exercise.
+>
+>1. Prove that if $T$ is a tree, then either $\operatorname{Aut}(T)$ contains only the identity, or it contains an element $\varphi$ such that $\varphi\circ\varphi$ is the identity.
+>
+>2. Construct a graph $G$ with one cycle in which the above conclusion fails. That is, such that $\operatorname{Aut}(G)$ contains more than one element, and for every $\varphi\in\operatorname{Aut}(G)$, $\varphi\circ\varphi$ is **not** the identity.
+
+## Bipartite graphs
+
+>[!def] Definition.
+>
+>A graph $G$ is called _bipartite_ if $G\to K_2$.
+
+Recall that $K_2$ is a just an edge. As an exercise, try proving the following result on your own to understand the intuition behind bipartite graphs.
+
+>[!thm] Proposition.
+>
+>Prove that the following are equivalent for any graph $G$.
+>
+>1. $G$ is bipartite.
+>2. Any component of $G$ is bipartite.
+>3. There is a set $C\subseteq V(G)$ such that every edge of $G$ has an endpoint in $C$ and the other in $V(G)\setminus C$.
+>4. You can color the vertices of $G$ in two colors such that adjacent vertices always get different colors.
+
+>[!abstract] Examples.
+>
+>1. Paths are bipartite.
+>2. Complete bipartite graphs are bipartite.
+>3. Even cycles are bipartite but odd cycles are not. A much stronger result is true, see below.
+
+>[!thm] Theorem.
+>
+>A finite graph is bipartite if and only if it contains no odd cycle.
+
+>[!proof]+ Proof:
+>
+>Suppose that $G$ is bipartite, that is $G\to K_2$. If $G$ contained an odd cycle $C$, then in particular $C\to G$. By transitivity, $C\to K_2$, contradicting the above example.
+>
+>Conversely, suppose that all cycles of $G$ are even. For every component $C$ of $G$, fix a vertex $v_C\in V(G)$ and define $d(v)$ as the length of the shortest path between $v$ and whatever vertex of the form $v_C$ is in the same component as $v$. Define $\varphi(v):=d(v)\pmod2$ and convince yourself that $\varphi:G\to K_2$, as desired.
+
+>[!info] Remark.
+>
+>The theorem above is also true for infinite graphs by a compactness argument, for example the [De Bruijn–Erdős theorem](https://en.wikipedia.org/wiki/De_Bruijn%E2%80%93Erd%C5%91s_theorem_(graph_theory)). The proof is outside of the scope of the course.
+
+>[!thm] Corollary.
+>
+>All finite trees are bipartite.
+
+## The hypercube
+
+This section deals with a graph I personally find interesting, as it lies in the intersection of the chapters Infinity, Combinatorics, and Topology.
+
+First, let me define the _Boolean lattice graph_ $B_n$. Consider $2^n$, the set of all binary sequences of length $n$, as vertex set and make two sequences adjacent if they differ in exactly one coordinate (or _bit_). Thus, for instance, $10\boxed110$ and $10\boxed010$ are adjacent in $B_5$, but $00000$ and $10001$ are not.
+
+For instance, $B_1$ has just a single edge $\{0,1\}$. $B_2$ is isomorphic to the square $C_4$. $B_3$ when drawn looks like a three-dimensional cube. $B_4$ looks like a tesseract. You get the idea.
+
+>[!thm] Proposition.
+>
+>For all positive integers $n$,
+>1. $B_n$ is connected;
+>2. $B_n$ is $n$-regular; and
+>3. $B_n$ is bipartite.
+
+>[!proof] Proof:
+>
+>For 3, define $C$ as the set of sequences with an even number of $1$'s. Then every edge has an endpoint in $C$ and the other in the complement.
+
+Now I introduce the protagonist of this section. Let $B_\infty$ be the graph on $2^\mathbb N$, the set of all countably infinite binary sequences, with the adjacencies defined the same way as for $B_n$.
+
+>[!thm] Theorem.
+>
+>$B_\infty$ is bipartite. But, perhaps surprisingly, $B_\infty$ is **not** connected. In fact, it has uncountably many components.
+
+>[!proof]- Proof:
+>
+>>[!hint] Hint: show that all cycles are even.
+
+>[!note] Exercise.
+>
+>Two sequences are connected in $B_\infty$ if and only if they differ by finitely many coordinates. Equivalently, if their difference is eventually zero, in the sense of PS3-4.
