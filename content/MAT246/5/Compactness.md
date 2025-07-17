@@ -1,5 +1,5 @@
 ---
-title: "5.2. Completeness and compactness"
+title: "5.2. Compactness"
 draft: false
 ---
 In this section, you can substitute $\mathbb R^n$ for a metric space $(X,d)$ (or even a _topological space_ in most cases). For ease of notation, I will denote the topology of $\mathbb R^n$ by the letter $\tau$. Recall the most important property about the real numbers:
@@ -150,6 +150,30 @@ Arguably the most interesting property about compact sets of reals is the follow
 >By compactness, there is a nonempty finite $F\subseteq\mathbb N$ such that $\{\mathbb R\setminus K_n:n\in F\}$ is an open cover of $K_0$. By the hypothesis that the compact sets are all nested, if I let $m:=\min F$, then $K_m\subseteq K_n\subseteq K_0$ for all $n\in F$.
 >
 >But being a subcover, $K_0\subseteq\mathbb R\setminus K_m$, which can only happen if the compact sets are all empty. This is a contradiction.
+
+### An application: Google maps inside of Google maps
+
+Go to Google maps on your phone and look up any place that contains the location of the device, say Toronto or North America. So, every point on your screen corresponds to some point on Earth. I claim that there is exactly one point where they match. That is, there is exactly one point on the screen that corresponds to itself in space. This works even if your screen isn't flat or laid out horizontally; you can print out the map as a huge billboard and crumble it up or stretch it and the statement still holds. Let me prove this to you.
+
+Start with any point $x_0$ in space, for instance, you can pick your own location. Now look at the position of $x_0$ on the map, call this point in space $x_1$. If you chose your own location, then these will not match unless you are standing right on top of your own location on the map. Next, zoom into the map until you find the location of the map within the map. In the map inside the map, draw out the location of $x_1$ and call this point in space $x_2$. Again, these could be different points in space. Now repeat these steps to find $x_3$, the point in space corresponding to the point $x_2$ in the map inside the map, but now in the map inside the map inside the map. If can keep going forever without ever finding a point that maps to itself. But the **limit** of the sequence must map to itself. Let me formalize this a bit more since the map analogy can only take me so far.
+
+Suppose that $f:\mathbb R^n\to\mathbb R^n$ is any function such that for all $x,y$, $d(f(x),f(y))<\lambda d(x,y)$, for some $0\leq\lambda<1$. For example, $f$ is the function that takes the city of Toronto and draws a map of it inside Toronto, and $\lambda$ is the scaling factor (so all I ask is for the map to be smaller than the real life location). The goal is to prove that there is a unique point $x^*$ such that $f(x^*)=x^*$. Intuitively, the paragraph above describes the construction as $x^*:=f(f(\cdots f(x_0)\cdots))$. After applying the map $f$ (_map_, get it?) infinitely many times, applying it once more makes no difference. Hence $x^*$ is _fixed_. But this is all very informal; I don't even know if this limit exists.
+
+>[!proof]+ Proof idea:
+>
+>Pick any point $x_0\in\mathbb R^n$ and define $x_{n+1}:=f(x_n)$ recursively. Consider $K_n:=\overline{B(x_n,\lambda^n\frac{d(x_1,x_0)}{1-\lambda})}$ and observe that the sets $K_n$ have the following properties:
+>
+>**Compact nonempty.** This follows from Heine-Borel as the closure of a ball is a bounded closed set that contains its center.
+>
+>**Nested.** 
+>
+>Therefore, by the nested set theorem, there is a point $x^*$ such that for all $n$, $j$
+
+>[!note] **Hard** exercise.
+>
+>Complete the proof. The calculations are easier to write if you assume that $\lambda=\frac12$.
+
+>This was an informal discussion of the Banach fixed-point theorem, and it has concrete uses ranging from reinforcement learning to economics.
 
 ## Sequential compactness
 

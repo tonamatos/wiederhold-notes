@@ -21,7 +21,7 @@ draft: false
 >[!proof]+ Proof:
 >
 >Fix a guest $x$ and denote by $F$ the set of guests that are friends with $x$ and by $S$ the set of guests that are not friends with $x$. By the pigeonhole principle, either $|F|\geq3$ or $|S|\geq3$. Without loss of generality (by interchanging all friends with strangers and vice versa), suppose the former happens. Then, select three guests in $F$. Either they are mutual strangers, in which case I am done, or two of them are friends, thus with $x$ the three are mutual friends.
- 
+
 ## A glimpse into Ramsey theory (out of scope of this course)
 
 >[!thm] Corollary (Schur, 1916).
@@ -30,15 +30,9 @@ draft: false
 
 Another way of interpreting the above result is: I can find a set of size two all of whose finite sums are inside the same set. What is the largest size of such a set guaranteed to exist?
 
->[!thm] Theorem (Folkman-Rado-Sanders, 1969).
->
->The set can have any arbitrarily large finite size.
-
-This can actually be extended using some significantly heavy machinery from set theory.
-
->[!thm] Theorem (Hindman, 1974).
->
->You can always find an infinite such set.
+- There is always a set of size 2: **Schur, 1916**. (This is slightly stronger than the above, can you see why?)
+- There is a set of any arbitrarily large finite size: **Folkman-Rado-Sanders, 1969.**
+- You can always find an infinite such set: **Hindman, 1974.** (This requires significantly heavy machinery from set theory.)
 
 Perhaps the result that gives this theory its name is the one below.
 
@@ -59,6 +53,8 @@ Perhaps the result that gives this theory its name is the one below.
 >[!def] Definition of graph.
 >
 >A _graph_ is a pair $G=(V,E)$ where $V$ is any set, called the _vertex set_, and $E\subseteq[V]^2$ is called the _edge_ set.
+>
+>When there is risk of confusion, I write $V(G)$ and $E(G)$ to clarify to the reader what graph I am referring to.
 
 Instead of writing an edge as $\{u,v\}$, I will write $uv$.
 
@@ -103,7 +99,7 @@ Say a vertex is _odd_ if it has odd degree.
 
 >[!proof]- Proof:
 >
->Reduce the equation given in the handshaking lemma modulo 2.
+>Reduce the equality given in the handshaking lemma modulo 2.
 
 ## Subgraphs
 
@@ -138,9 +134,12 @@ A special case that deserves attention is that of _paths_ as subgraphs. There ar
 >[!abstract] Examples.
 >
 >1. The identity is always a graph homomorphism. Thus, $\operatorname{id}_{V(G)}:G\to G$. (_Reflexivity_)
->2. If $H\leq G$, then the inclusion map $i:V(H)\to V(G)$ is a graph homormorphism. In other words, if $H\leq G$ then $H\to G$.
+>2. If $H\leq G$, then the inclusion map $i:V(H)\to V(G)$ is a graph homormorphism. In other words, if $H\leq G$ then $H\to G$. (_Monotonicity_)
 >3. If $G\to H$ and $H\to J$, then $G\to J$. (_Transitivity_)
->4. Between any two cycles of even length there is a homomorphism. This is not true for odd-length cycles of **any** different lengths.
+
+>[!note] Exercise.
+>
+>For two cycles, $C_k\to C_\ell$ if and only if $k$ is even, or $\ell$ is odd and $\ell\leq k$.
 
 >[!def] Definition.
 >
@@ -161,8 +160,34 @@ Intuitively, walks can repeat vertices and contain cycles. Paths cannot.
 >
 >>[!check] Solution in Tutorial 9.
 
-The most important types of morphisms are defined in the following subsection.
+You might be interested to learn that something as simple as deciding whether for an arbitrary graph $G$, $G\to K_3$ or $G\not\to K_3$, is an _NP-complete problem_, meaning that if you discover a deterministic polynomial time algorithm that decides it, you will have effectively solved **every** NP problem and answered one of the most important [open problems](https://en.wikipedia.org/wiki/P_versus_NP_problem) in the history of mathematics and computer science.
+### An application: scheduling problems
+
+Your university has a bunch of courses: MAT224, MAT246, MAT237, etc. Students can be enrolled in multiple courses. You need to schedule the exams so that every student can attend without conflicts.
+- Some students take both MAT224 and MAT246,
+- (make up some other restrictions yourself, I'm lazy...)
+
+If you model this problem as a graph $G$, where $V$ are the courses and $E$ is determined by whether some students take those courses at the same time, then finding a homomorphism $\varphi:G\to K_t$ for a minimal $t$ is equivalent to solving this scheduling problem efficiently. Here, $t$ is the number of timeslots you need to assign and the vertices of $K_t$ label these timeslots. So, for instance, you can find a trivial solution with $t:=|V|$ where every course gets its own unique timeslot. But, if you want to save time and money, you should schedule exams for disjoint courses at the same time, saving one timeslot.
+
+>[!note] Exercise.
+>
+>What is the optimal $t$ for when $G$ is a cycle?
+
+>[!note] Exercise.
+>
+>1. What if you don't care about students taking MAT246 and MAT224 at the same time because, say, those students can take a single exam for both courses or something. How do you model additional restrictions where some pairs of courses are allowed to conflict with each other?
+>2. What if two or more courses share the same coordinator and must be scheduled at different times independently of the students? How do you model this?
+>3. **Hard.** What if the timeslots are all fixed but some of them are close together, and you want to avoid students writing finals on consecutive days. How do you model this situation?
+>
+>>[!hint]- Hint.
+>>
+>>1. Remove edges from $G$.
+>>2. Add edges to $G$.
+>>3. Remove edges from $K_t$.
+
 ### Isomorphisms and automorphisms
+
+The most important types of morphisms are defined here.
 
 >[!def] Definition.
 >
@@ -172,7 +197,7 @@ The most important types of morphisms are defined in the following subsection.
 >\varphi:G\to H\qquad\text{ and }\qquad\varphi^{-1}:H\to G.
 >$$
 >
->Such a function is called an _isomorphism_. Equivalently, $\varphi$ is an isomorphism if
+>Such a function is called an _isomorphism_. Equivalently, a bijection between vertex sets $\varphi$ is an isomorphism if
 >
 >$$
 >\forall u,v\in V(G),\quad uv\in E(G)\iff\varphi(u)\varphi(v)\in E(H).
@@ -192,7 +217,7 @@ The most important types of morphisms are defined in the following subsection.
 >
 >>[!note] **Hard** exercise ($\to$ is not _antisymmetric_).
 >>
->>Find two finite non-isomorphic graphs $G$ and $H$ such that $G\to H$ and $H\to G$.
+>>Find two finite non-isomorphic graphs $G$ and $H$ such that $G\to H$ and $H\to G$. You can even find such graphs of different orders.
 
 >[!warning] Note:
 >
@@ -242,7 +267,11 @@ One can define an analogous notion for _edge-similarity_.
 
 >[!note] Exercise.
 >
->Prove that vertex similarity is an equivalence relation on $V$.
+>Prove that vertex similarity is an equivalence relation on $V$, and that orbits are precisely the equivalence classes.
+
+>[!note] **Hard** exercise.
+>
+>Prove that in a finite graph $G$, the number of elements of any orbit divides $|\operatorname{Aut}(G)|$.
 
 Since the identity is an automorphism of any graph $G$, $\operatorname{Aut}(G)$ is always nonempty. In fact, if $n$ is the number of vertices of $G$, then $1\leq|\operatorname{Aut}(G)|\leq n!$.
 
@@ -259,12 +288,16 @@ A graph $G$ is called _asymmetric_ if $|\operatorname{Aut}(G)|=1$. Equivalently,
 >Prove that all asymmetric graphs have order $6$ or more. Prove that for ever $n\geq6$ there is an asymmetric graph of order $n$.
 >
 >**Very hard.** Is there a regular asymmetric graph?
+>
+>>[!hint]- Hint.
+>>
+>>Yes, there is. The smallest such graph has 10 vertices.
 
 >[!note] Exercise.
 >
 >Is there a non-trivial graph where all vertices are similar but not all the edges?
 >
->**Very hard.** What about the other way around?
+>**~~Very hard.~~ Actually easy.** What about the other way around?
 
 >[!note] Exercise.
 >
@@ -325,11 +358,29 @@ A graph $G$ is called _asymmetric_ if $|\operatorname{Aut}(G)|=1$. Equivalently,
 >
 >If $n\geq2$, then $T$ contains a vertex of degree 1 $v$. Then $T-v$ must satisfy the inductive hypothesis, but this new tree has exactly one vertex and one edge fewer than $T$. so the result follows.
 
->[!note] **Hard** exercise.
+>[!note] **Hard** exercise (symmetries of finite trees).
 >
->1. Prove that if $T$ is a tree, then either $\operatorname{Aut}(T)$ contains only the identity, or it contains an element $\varphi$ such that $\varphi\circ\varphi$ is the identity.
+>1. Prove that if $T$ is a finite tree, then either $\operatorname{Aut}(T)$ contains only the identity, or it contains an element $\varphi$ such that $\varphi\circ\varphi$ is the identity.
 >
->2. Construct a graph $G$ with one cycle in which the above conclusion fails. That is, such that $\operatorname{Aut}(G)$ contains more than one element, and for every $\varphi\in\operatorname{Aut}(G)$, $\varphi\circ\varphi$ is **not** the identity.
+>2. Construct a finite graph $G$ with one cycle in which the above conclusion fails. That is, such that $\operatorname{Aut}(G)$ contains more than one element, and for every $\varphi\in\operatorname{Aut}(G)$, $\varphi\circ\varphi$ is **not** the identity.
+>
+>>[!hint]- Hint.
+>>
+>>2. Start with a cycle and append subgraphs to the vertices to break the reflection symmetries but preserving some rotational symmetries.
+
+>[!note] **Very hard** exercise (infinite trees).
+>
+>A _branch_ is an infinite path in a tree $T$, that is, an injection $\mathbb N\to T$.
+>
+>1. Prove that every infinite tree with $\Delta<\infty$ has a branch (**König**).
+>2. Construct an infinite tree with no branches.
+>3. Construct a tree such that $V$ is countable, but with uncountably many branches.
+>
+>>[!hint]- Hint.
+>>
+>>3. Pick a starting vertex $x_0$ and recursively apply the infinite pigeonhole principle: some $x_{n+1}\in N(x_n)$ must be such that $N(x_{n+1})$ is infinite.
+>>4. Define the tree on the decreasing sequences in $\mathbb N^\mathbb N$. A branch would violate the well-ordering principle.
+>>5. Consider $2^{<\infty}$ ordered by extension. The branches correspond to $2^\mathbb N$.
 
 ## Bipartite graphs
 
@@ -366,7 +417,7 @@ Recall that $K_2$ is a just an edge. As an exercise, try proving the following r
 
 >[!info] Remark.
 >
->The theorem above is also true for infinite graphs by a compactness argument, for example the [De Bruijn–Erdős theorem](https://en.wikipedia.org/wiki/De_Bruijn%E2%80%93Erd%C5%91s_theorem_(graph_theory)). The proof is outside of the scope of the course.
+>The theorem above and corollary below are also true for infinite graphs by a compactness argument, for example the [De Bruijn–Erdős theorem](https://en.wikipedia.org/wiki/De_Bruijn%E2%80%93Erd%C5%91s_theorem_(graph_theory)). The proof is outside of the scope of the course.
 
 >[!thm] Corollary.
 >

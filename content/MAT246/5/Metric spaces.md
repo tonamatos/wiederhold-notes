@@ -18,6 +18,12 @@ Topology plays in important role in one of the two learning objectives for this 
 
 If $G$ is a connected graph, define $d(u,v)$ as the smallest length of a path with endpoints $u$ and $v$. $(G,d)$ is then a metric space.
 
+>[!note] Exercise.
+>
+>If $\varphi:G\to H$ is a graph homomorphism, then for all $x,y\in V(G)$, $d(\varphi(x),\varphi(y))\leq d(x,y)$.
+>
+>If $\varphi$ is an isomorphism, then the above inequality becomes an equality.
+
 For a more concrete example, define in any component $B$ of the hypercube $B_\infty$, where $s$ and $t$ are countably infinite binary sequences, $h(s,t)$ as the number of coordinates that $s$ and $t$ differ in. That is,
 
 $$
@@ -50,7 +56,7 @@ is sometimes referred to as the _taxicab metric_. To see why, draw $\mathbb R^2$
 
 From now on, let $(X,d)$ be an abstract metric space. Since my course only deals with a very short introduction, for the most part you can safely assume that $X=\mathbb R$ with the Euclidean metric.
 
->[!def] Definition (Open).
+>[!def] Definition of open.
 >
 >The _open ball_ centered at $x$ and of radius $r>0$ is the set $B(x,r):=\{y\in X:d(x,y)<r\}$.
 >
@@ -69,7 +75,7 @@ An immediate remark is that open balls are open.
 >5. What are the open balls in a connected graph?
 >6. Now draw open balls with the other metrics mentioned above. How are they different?
 
->[!def] Definition (Closed).
+>[!def] Definition of closed.
 >
 >Given $x\in X$ and $A\subseteq X$, I say $x$ is a _point of closure of $A$_ if for all $r>0$, $B(x,r)\cap A\neq\emptyset$. The set of all these points is called the _closure of $A$_ and is denoted by $\overline A$.
 >
@@ -127,9 +133,9 @@ Another easy-to-prove property of metric spaces is seen below.
 
 ## Sequences
 
-Most of the theory of metric spaces involves sequences. Since I want to transcend this and move to more abstract and simpler concepts, I will only use sequences for examples. Recall that a _sequence in $X$_ is just a function $f:\mathbb N\to X$, which I denote by its indices $x_n=f(n)$ when convenient.
+Recall that a _sequence in $X$_ is just a function $f:\mathbb N\to X$, which I denote by its indices $x_n=f(n)$ when convenient.
 
->[!def] Notation (Limit).
+>[!def] Notation/Definition of limit.
 >
 >Let $\lim_{n\to\infty}x_n=x$ abbreviate the following statement.
 >

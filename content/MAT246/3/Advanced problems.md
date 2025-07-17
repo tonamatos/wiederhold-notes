@@ -1,5 +1,5 @@
 ---
-title: "3.6. Advanced set theory problems"
+title: "3.6. Set theory exercises"
 draft: false
 ---
 ### Functions

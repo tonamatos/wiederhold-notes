@@ -42,7 +42,7 @@ Some general advice on learning mathematics can be found [[Advice|here]].
 3. [[Indexed families|Indexed families of sets]]
 4. [[Aleph_0|Aleph naught]]
 5. [[Continuum|The continuum]]
-6. [[Advanced problems]]
+6. [[Advanced problems|More set theory exercises]]
 
 # **June break & midterm**
 
