@@ -63,7 +63,7 @@ Instead of writing an edge as $\{u,v\}$, I will write $uv$.
 >1. The _neighbors_ of a vertex $v\in V$ are the elements of $N_G(v):=\{u\in V:uv\in E\}$.
 >2. The _degree_ of a vertex is the number of neighbors. $d_G(v):=|N_G(v)|$. For a finite nonempty graph $G$, the minimum and maximum degree are denoted by $\delta(G)$ and $\Delta(G)$ respectively.
 >3. If $\delta(G)=\Delta(G)$, $G$ is called $\delta(G)$_-regular_.
->4. $|V|$ and $|E|$ are called the _order_ and _size_ of $G$ respectively.
+>4. $|V|$ and $|E|$ are called the _order_ and _size_ of $G$ respectively; in the context of graphs, these are always denoted by $n$ and $m$ respectively.
 
 ### Named examples of graphs
 
@@ -356,7 +356,7 @@ A graph $G$ is called _asymmetric_ if $|\operatorname{Aut}(G)|=1$. Equivalently,
 >
 >By induction on the order of the tree. Clearly, if $n=1$, the result holds.
 >
->If $n\geq2$, then $T$ contains a vertex of degree 1 $v$. Then $T-v$ must satisfy the inductive hypothesis, but this new tree has exactly one vertex and one edge fewer than $T$. so the result follows.
+>If $n\geq2$, then $T$ contains a vertex of degree 1 $v$. Then $T-v$ must satisfy the inductive hypothesis, but this new tree has exactly one vertex and one edge fewer than $T$, so the result follows.
 
 >[!note] **Hard** exercise (symmetries of finite trees).
 >
@@ -378,9 +378,9 @@ A graph $G$ is called _asymmetric_ if $|\operatorname{Aut}(G)|=1$. Equivalently,
 >
 >>[!hint]- Hint.
 >>
->>3. Pick a starting vertex $x_0$ and recursively apply the infinite pigeonhole principle: some $x_{n+1}\in N(x_n)$ must be such that $N(x_{n+1})$ is infinite.
->>4. Define the tree on the decreasing sequences in $\mathbb N^\mathbb N$. A branch would violate the well-ordering principle.
->>5. Consider $2^{<\infty}$ ordered by extension. The branches correspond to $2^\mathbb N$.
+>>1. Pick a starting vertex $x_0$ and recursively apply the infinite pigeonhole principle: some $x_{n+1}\in N(x_n)$ must be such that $N(x_{n+1})$ is infinite.
+>>2. Define the tree on the decreasing sequences in $\mathbb N^\mathbb N$. A branch would violate the well-ordering principle.
+>>3. Consider $2^{<\infty}$ ordered by extension. The branches correspond to $2^\mathbb N$.
 
 ## Bipartite graphs
 
