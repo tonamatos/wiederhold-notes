@@ -80,7 +80,8 @@ $$
 Define $f:\mathbb Z\times\mathbb Z\times\mathbb Z\to\mathbb N$ by
 
 $$
-f(n,m,\ell):=2^{|n|}\cdot3^{|m|}\cdot5^{|\ell|}\cdot7^{s(n)}\cdot11^{s(m)}\cdot13^{s(\ell)}.$$
+f(n,m,\ell):=2^{|n|}\cdot3^{|m|}\cdot5^{|\ell|}\cdot7^{s(n)}\cdot11^{s(m)}\cdot13^{s(\ell)}.
+$$
 
 Injectivity follows form the fundamental theorem of arithmetic.
 
