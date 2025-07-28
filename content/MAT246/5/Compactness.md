@@ -175,6 +175,20 @@ Suppose that $f:\mathbb R^n\to\mathbb R^n$ is any function such that for all $x,
 
 >This was an informal discussion of the Banach fixed-point theorem, and it has concrete uses ranging from reinforcement learning to economics.
 
+### Another application: Baire category theory
+
+>[!info] Proving with was a question in last year's MAT246 final.
+
+Recall that a set $E\subseteq\mathbb R$ is _dense_ if for every $x$ and every $r>0$, $E\cap(x-r,x+r)\neq\emptyset$. Let $\{U_n:n\in\mathbb N\}$ be a family of open dense subsets of $\mathbb R$. Let $W$ be an open bounded interval.
+
+1. Prove that there exist $r_0>0$ and $x_0\in\mathbb R$ such that the closed interval $[x_0-r_0,x_0+r_0]$ is contained in  $W\cap U_0$.
+2. Construct sequences $r_n$ and $x_n\in\mathbb R$ such that for all $n$, $0<r_n$ and $[x_{n+1}-r_{n+1},x_{n+1}+r_{n+1}]\subseteq[x_n-r_n,x_n+r_n]\cap U_n$.
+3. Use the nested set theorem to conclude that some real number $x$ satisfies $x\in W\cap U_n$ for all $n$.
+4. Conclude that $\bigcap_{n\in\mathbb N}U_n$ is dense.
+
+>[!thm] Baire category theorem.
+>
+>The intersection of countably many open dense sets of reals is dense in $\mathbb R$.
 ## Sequential compactness
 
 Recall that a sequence in $\mathbb R^n$ is just a function $s:\mathbb N\to\mathbb R^n$.

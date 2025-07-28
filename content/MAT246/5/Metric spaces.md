@@ -131,6 +131,27 @@ Another easy-to-prove property of metric spaces is seen below.
 >
 >Since $x\neq y$, $r:=\frac12d(x,y)>0$. Thus $B(x,r)$ and $B(y,r)$ have the desired property.
 
+## Interior and closure operators
+
+>[!def] Definition of interior.
+>
+>Let $A\subseteq X$. Then $\operatorname{int}A$ is the union of all open sets contained in $A$.
+
+>[!thm] Basic properties of interior and closure.
+>
+>1. $\operatorname{int}A\subseteq A\subseteq\overline A$ and the three sets are equal if and only if $A\in\{\emptyset,X\}$.
+>2. $\operatorname{int}A$ is the union of all open balls contained in $A$.
+>3. $A\in\tau$ if and only if $A\subseteq\operatorname{int}A$. In particular, the interior is always open and the closure is always closed.
+>4. $\operatorname{int}A\cap\operatorname{int}B=\operatorname{int}(A\cap B)$ and $\overline A\cup\overline B=\overline{A\cup B}$.
+>5. $\operatorname{int}(X\setminus A)=X\setminus\overline A$ and $\overline{X\setminus A}=X\setminus\operatorname{int}A$.
+
+>[!note] Exercises.
+>
+>1. Prove the above proposition.
+>2. Find counterexamples for (4) interchanging union and intersection.
+>3. Prove that if $A$ is closed and $B$ has empty interior, then $\operatorname{int}(A\cup B)=\operatorname{int}A$.
+>4. Give a counterexample of the above after removing the word **closed**.
+
 ## Sequences
 
 Recall that a _sequence in $X$_ is just a function $f:\mathbb N\to X$, which I denote by its indices $x_n=f(n)$ when convenient.
@@ -145,7 +166,7 @@ Recall that a _sequence in $X$_ is just a function $f:\mathbb N\to X$, which I d
 
 >[!abstract] Example.
 >
->I will prove that $\lim_{n\to\infty}\frac1n=0$. Let $r>0$, then, by the Archimedean property, there is an $N\in\mathbb N$ such that $N>\frac1n$. But then $\frac1n<r$, so obviously $\frac1n\in B(0,r)$ for all $n\geq N$.
+>I will prove that $\lim_{n\to\infty}\frac1n=0$. Let $r>0$, then, by the Archimedean property, there is an $N\in\mathbb N$ such that $N>\frac1r$. But then $\frac1N<r$, so obviously $\frac1n\in B(0,r)$ for all $n\geq N$.
 
 >[!note] Exercise.
 >

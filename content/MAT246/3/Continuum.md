@@ -44,7 +44,7 @@ Here is a list of lemmas students proved in class that culminate in the main res
 
 >[!note] **Hard** exercises.
 >
->7. If $A$ is countable and $|B|\leq\mathfrak c$, there are at most $\mathfrak c$-many functions $A\to B$.
->8. The set of _continuous_ functions $\mathbb R\to\mathbb R$ has size $\mathfrak c$, and the set of discontinuous functions $\mathbb R\to\mathbb R$ has size $2^\mathfrak c$.
->9. The product of countably many sets of size $\leq\mathfrak c$ has size $\leq\mathfrak c$.
+>1. If $A$ is countable and $|B|\leq\mathfrak c$, there are at most $\mathfrak c$-many functions $A\to B$.
+>2. The set of _continuous_ functions $\mathbb R\to\mathbb R$ has size $\mathfrak c$, and the set of discontinuous functions $\mathbb R\to\mathbb R$ has size $2^\mathfrak c$.
+>3. The product of countably many sets of size $\leq\mathfrak c$ has size $\leq\mathfrak c$.
 

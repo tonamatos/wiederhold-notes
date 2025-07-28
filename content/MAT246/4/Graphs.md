@@ -358,6 +358,10 @@ A graph $G$ is called _asymmetric_ if $|\operatorname{Aut}(G)|=1$. Equivalently,
 >
 >If $n\geq2$, then $T$ contains a vertex of degree 1 $v$. Then $T-v$ must satisfy the inductive hypothesis, but this new tree has exactly one vertex and one edge fewer than $T$, so the result follows.
 
+>[!note] Exercise.
+>
+>Is the converse of the above theorem true? That is, if $G$ is connected and has one edge fewer than vertices, must it be a tree?
+
 >[!note] **Hard** exercise (symmetries of finite trees).
 >
 >1. Prove that if $T$ is a finite tree, then either $\operatorname{Aut}(T)$ contains only the identity, or it contains an element $\varphi$ such that $\varphi\circ\varphi$ is the identity.

@@ -111,8 +111,10 @@ The GCD and LCM can be computed in terms of the multiplicities.
 
 >[!note] Exercise.
 >
->Use the above (even if you did not solve it) to show that for any integers not both zero $a$ and $b$,
+>Use the above to show that for any integers not both zero $a$ and $b$,
 >
 >$$
 >\gcd(a,b)\operatorname{lcm}(a,b)=ab.
 >$$
+>
+>**Hard:** give a proof directly from the definition, that is, without using the above formulas.
