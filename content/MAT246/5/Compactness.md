@@ -2,7 +2,9 @@
 title: "5.2. Compactness"
 draft: false
 ---
-In this section, you can substitute $\mathbb R^n$ for a metric space $(X,d)$ (or even a _topological space_ in most cases). For ease of notation, I will denote the topology of $\mathbb R^n$ by the letter $\tau$. Recall the most important property about the real numbers:
+In this section, you can substitute $\mathbb R^n$ for a metric space $(X,d)$ (or even a _topological space_ in most cases). For ease of notation, I will denote the topology of $\mathbb R^n$ by the letter $\tau$.
+
+Recall the most important property about the real numbers. Given a set $E\subseteq\mathbb R$, I say that the real $r$ is an _upper bound_ of $E$ if for all $e\in E$, $e\leq r$. If $E$ has a least upper bound, I call that $\sup E$. The completeness axiom states that any nonempty set of reals with an upper bound has a **least** upper bound:
 
 >[!thm] Supremum axiom ("$\mathbb R$ is a _complete_ metric space").
 >
@@ -83,15 +85,15 @@ I need to give a much simpler characterization of compactness in $\mathbb R$ bef
 
 >[!proof]+ Proof:
 >
->Let $C$ be a closed subset of a compact set $K$ and let $\mathcal O$ be an open cover of $C$. It follows that $\mathcal C\cup\{\mathbb R^n\setminus C\}$ is an open cover of $K$. Thus, by compactness, there are $U_1,\dots,U_n\in\mathcal O$ such that
+>Let $C$ be a closed subset of a compact set $K$ and let $\mathcal O$ be an open cover of $C$. It follows that $\mathcal O\cup\{\mathbb R^n\setminus C\}$ is an open cover of $K$. Thus, by compactness, there are $U_1,\dots,U_n\in\mathcal O$ such that
 >
 >$$
 >C\subseteq K\subseteq\bigcup_{i=1}^n U_i\cup\mathbb R^n\setminus C.
 >$$
 >
->Finally, $U_1,\dots,U_n$ is a finite open cover of $C$, proving $C$ is compact.
+>Finally, $\{U_1,\dots,U_n\}$ is a finite open cover of $C$, proving $C$ is compact.
 
-Finally I can provide the first non-trivial example of a compact set.
+Now I can provide the first non-trivial example of a compact set.
 
 >[!thm] Theorem.
 >
@@ -177,7 +179,7 @@ Suppose that $f:\mathbb R^n\to\mathbb R^n$ is any function such that for all $x,
 
 ### Another application: Baire category theory
 
->[!info] Proving with was a question in last year's MAT246 final.
+>[!info] Proving this was a question in last year's MAT246 final.
 
 Recall that a set $E\subseteq\mathbb R$ is _dense_ if for every $x$ and every $r>0$, $E\cap(x-r,x+r)\neq\emptyset$. Let $\{U_n:n\in\mathbb N\}$ be a family of open dense subsets of $\mathbb R$. Let $W$ be an open bounded interval.
 

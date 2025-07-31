@@ -4,11 +4,10 @@ draft: false
 ---
 >[!hint] Five out of the six final questions will be slight variations of problems from this list.
 
->PS stands for Problem Set. PS1Q2 means Question 2 from Problem Set 1.
->T stands for Tutorial. T1Q2 refers to Question 2 from Tutorial 1.
+>PS1Q2 means Question 2 from Problem Set 1. T1Q2 refers to Question 2 from Tutorial 1.
 ### 1. Foundations
 
-- PS1Q2. An example of a variation could be changing the word _finite_ to _countable_ or, more generally, _of cardinality less than $\kappa$_ in part (c).
+- PS1Q2. An example of a variation could be changing the word _finite_ to _countable_ or, more generally, ~~_of cardinality less than $\kappa$_ in part (c)~~ (this only works for _regular cardinals_, so ignore this last general variation).
 - PS1Q9.
 
 ### 2. The Integers
