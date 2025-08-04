@@ -137,6 +137,8 @@ A special case that deserves attention is that of _paths_ as subgraphs. There ar
 >2. If $H\leq G$, then the inclusion map $i:V(H)\to V(G)$ is a graph homormorphism. In other words, if $H\leq G$ then $H\to G$. (_Monotonicity_)
 >3. If $G\to H$ and $H\to J$, then $G\to J$. (_Transitivity_)
 
+As another example, the pigeonhole principle may be stated as $K_n\not\to K_m$ whenever $m<n$.
+
 >[!note] Exercise.
 >
 >For two cycles, $C_k\to C_\ell$ if and only if $k$ is even, or $\ell$ is odd and $\ell\leq k$.
@@ -364,7 +366,7 @@ A graph $G$ is called _asymmetric_ if $|\operatorname{Aut}(G)|=1$. Equivalently,
 
 >[!note] **Hard** exercise (symmetries of finite trees).
 >
->1. Prove that if $T$ is a finite tree, then either $\operatorname{Aut}(T)$ contains only the identity, or it contains an element $\varphi$ such that $\varphi\circ\varphi$ is the identity.
+>1. Prove that if $T$ is a finite tree, then either $\operatorname{Aut}(T)$ contains only the identity, or it contains an element $\varphi$ such that $\varphi\circ\varphi$ is the identity (also called an _involution_).
 >
 >2. Construct a finite graph $G$ with one cycle in which the above conclusion fails. That is, such that $\operatorname{Aut}(G)$ contains more than one element, and for every $\varphi\in\operatorname{Aut}(G)$, $\varphi\circ\varphi$ is **not** the identity.
 >
