@@ -163,6 +163,15 @@ Intuitively, walks can repeat vertices and contain cycles. Paths cannot.
 >>[!check] Solution in Tutorial 9.
 
 You might be interested to learn that something as simple as deciding whether for an arbitrary graph $G$, $G\to K_3$ or $G\not\to K_3$, is an _NP-complete problem_, meaning that if you discover a deterministic polynomial time algorithm that decides it, you will have effectively solved **every** NP problem and answered one of the most important [open problems](https://en.wikipedia.org/wiki/P_versus_NP_problem) in the history of mathematics and computer science.
+
+### Chromatic numbers
+
+For any graph $G$ on $n$ vertices, the statement $G\to K_n$ holds. Thus it makes sense to consider the least natural $k$ such that $G\to K_k$. This number is known as the _chromatic number of $G$_ and is denoted by $\chi(G)$. Note that $G\to H$ implies $\chi(G)\leq\chi(H)$ for any two graphs.
+
+>[!note] **Hard** exercise.
+>
+>Suppose that $\varphi:G\to K_{\chi(G)}$. Prove that for any two distinct $i,j\in V(K_k)$, there is an edge from $\varphi^{-1}\{i\}$ to $\varphi^{-1}\{j\}$ in $G$.
+
 ### An application: scheduling problems
 
 Your university has a bunch of courses: MAT224, MAT246, MAT237, etc. Students can be enrolled in multiple courses. You need to schedule the exams so that every student can attend without conflicts.

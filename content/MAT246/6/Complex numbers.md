@@ -58,6 +58,7 @@ An important difference between $\mathbb R$ and $\mathbb C$ is that the former i
 >Prove that there is no _strict linear order_ (that is, an irreflexive, asymmetric, transitive relation where any two distinct elements are related) on $\mathbb C$ that preserves the operations.
 >
 >>[!check]- Solution.
+>>
 >>By contradiction, suppose that $\prec$ is such a relation on $\mathbb C$. Then compare $i$ and $0$. Without loss of generality, suppose that $0\prec i$. But then, $0=0^2\prec i^2=-1$.
 >>
 >>>[!warning] This is **not** yet a contradiction, since $\prec$ is an arbitrary order that might just think that $-1$ is a "positive" number.
@@ -236,7 +237,9 @@ Let $S_2:=\{(x,y,z)\in\mathbb R^3:x^2+y^2+z^2=1\}$ be the three-dimensional unit
 
 $$
 E(x_1,x_2,x_3)=\frac{x_1}{1-x_3}+i\frac{x_2}{1-x_3}
-$$in any other case.
+$$
+
+in any other case.
 
 >[!note] Exercise.
 >
@@ -259,4 +262,4 @@ $$in any other case.
 >>
 >>Use your knowledge of Calculus to show that $E$ is bi-continuous.
 
-The last exercise is equivalent to showing that $E$ is a _homeomorphism_, which is a map that preserves all topological properties. Note, if you knew this beforehand, then that the fact that $S_2$ is a compact subset of the three-dimensional space immediately gives that $\mathbb C^*$ is compact as well.
+The last exercise shows that $E$ is a _homeomorphism_, which is a map that preserves all topological properties. Note, if you knew this beforehand, then that the fact that $S_2$ is a compact subset of the three-dimensional space immediately gives that $\mathbb C^*$ is compact as well.
