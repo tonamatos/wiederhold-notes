@@ -227,7 +227,7 @@ For me, a _bounded_ sequence is just one that is bounded as a set. That is, the 
 
 >[!thm] Theorem ("in $\mathbb R^n$, sequential compactness is the same as compactness").
 >
->Let $K\subseteq\mathbb R$. Then $K$ is compact if and only if every sequence $\{x_n\}_n\subseteq K$ has a subsequence that converges in $K$.
+>Let $K\subseteq\mathbb R$. Then $K$ is compact if and only if every sequence $\{x_n\}_n\subseteq K$ has a subsequence that converges **in $K$**.
 
 >[!proof]+ Proof:
 >

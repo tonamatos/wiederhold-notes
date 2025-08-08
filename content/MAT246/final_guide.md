@@ -7,7 +7,7 @@ draft: false
 >PS1Q2 means Question 2 from Problem Set 1. T1Q2 refers to Question 2 from Tutorial 1.
 ### 1. Foundations
 
-- PS1Q2. An example of a variation could be changing the word _finite_ to _countable_ or, more generally, ~~_of cardinality less than $\kappa$_ in part (c)~~ (this only works for _regular cardinals_, so ignore this last general variation).
+- PS1Q2. An example of a variation could be changing the word _finite_ to _countable_.
 - PS1Q9.
 
 ### 2. The Integers
@@ -26,7 +26,7 @@ draft: false
 
 ### 4. Combinatorics
 
-- There will be one question that uses the pigeonhole principle. To understand how to use this, try solving these by yourself: T7Q1, PS4Q4 and PS4Q5, PS4Q6 (which involves graphs), T8Q3 and the exercises at the end of [[Pigeonhole#Generalized pigeonhole principles|4.2]]. Ignore the **hard** exercises.
+- There will be at least one question that uses the pigeonhole principle. Examples: T7Q1, PS4Q4 and PS4Q5, PS4Q6, T8Q3 and the exercises at the end of [[Pigeonhole#Generalized pigeonhole principles|4.2]]. Ignore the **hard** exercises.
 - Any proof or exercise from the section [[Graphs#Connectivity and trees|Connectivity and trees]] except the **hard** or **very hard** ones.
 
 ### 5. Topology
@@ -35,8 +35,8 @@ draft: false
 - The exercise in [[Metric spaces#Interior and closure operators|Interior and closure operators]] is part of what I consider _basic properties of the interior and closure_; also PS5Q9 and PS5Q10 have some of the same questions.
 - Any union of open sets can be written as a countable union of open sets, even open balls.
 - Any collection of pairwise disjoint nonempty open sets in $\mathbb R$ is countable.
-- In PS5 I defined the sets $A'$. Give an example of a set $A$ such that $(A')'$ is a point. ~~Give an example of a set $A$ such that $A'^{\times 17}$ is a point.~~ ~~Now repeat the exercise where $A$ is a subset of the Cantor set.~~
+- In PS5 I defined the sets $A'$. Give an example of a set $A$ such that $(A')'$ is a point. Can you find one where $((A')')'$ is a point? What about $((((((A)')')')')')'$?
 
 ### 6. Complex Numbers
 
-- Any exercise from PS6.
+- Only basic properties of complex numbers seen in the notes/PS6 excluding anything topological (like PS6Q4).

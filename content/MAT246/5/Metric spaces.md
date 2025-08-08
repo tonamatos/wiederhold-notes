@@ -140,17 +140,19 @@ Another easy-to-prove property of metric spaces is seen below.
 >[!thm] Basic properties of interior and closure.
 >
 >1. $\operatorname{int}A\subseteq A\subseteq\overline A$ and the three sets are equal if and only if $A\in\{\emptyset,X\}$.
->2. $\operatorname{int}A$ is the union of all open balls contained in $A$.
->3. $A\in\tau$ if and only if $A\subseteq\operatorname{int}A$. In particular, the interior is always open and the closure is always closed.
->4. $\operatorname{int}A\cap\operatorname{int}B=\operatorname{int}(A\cap B)$ and $\overline A\cup\overline B=\overline{A\cup B}$.
->5. $\operatorname{int}(X\setminus A)=X\setminus\overline A$ and $\overline{X\setminus A}=X\setminus\operatorname{int}A$.
+>2. If $A\subseteq B$, then $\overline A\subseteq\overline B$ and $\operatorname{int}A\subseteq\operatorname{int}B$. (_Monotonicity_)
+>3. $\operatorname{int}A$ is the union of all open balls contained in $A$.
+>4. $A\in\tau$ if and only if $A\subseteq\operatorname{int}A$. In particular, the interior is always open and the closure is always closed.
+>5. $\operatorname{int}A\cap\operatorname{int}B=\operatorname{int}(A\cap B)$ and $\overline A\cup\overline B=\overline{A\cup B}$.
+>6. $\operatorname{int}(X\setminus A)=X\setminus\overline A$ and $\overline{X\setminus A}=X\setminus\operatorname{int}A$.
 
 >[!note] Exercises.
 >
 >1. Prove the above proposition.
->2. Find counterexamples for (4) interchanging union and intersection.
->3. Prove that if $A$ is closed and $B$ has empty interior, then $\operatorname{int}(A\cup B)=\operatorname{int}A$.
->4. Give a counterexample of the above after removing the word **closed**.
+>2. Find counterexamples for the converse implications of (2).
+>3. Find counterexamples for (5) interchanging union and intersection.
+>4. Prove that if $A$ is closed and $B$ has empty interior, then $\operatorname{int}(A\cup B)=\operatorname{int}A$.
+>5. Give a counterexample of the above after removing the word **closed**.
 
 ## Sequences
 

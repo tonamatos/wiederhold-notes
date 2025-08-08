@@ -2,6 +2,38 @@
 title: "6. Complex numbers"
 draft: false
 ---
+## Algebraic motivation
+
+In $\mathbb N$, I was unable to solve all equations involving _addition_ (which is repeated successor), for instance
+
+$$
+5+x=2,
+$$
+
+so I introduced an equivalence relation that "emulates" what the difference between two naturals is, and that is how I constructed the integers $\mathbb Z$. Now, I can solve the above equation $5+\boxed{-3}=2$, essentially by inventing _negative_ numbers.
+
+Not all equations involving _multiplication_ (which is repeated addition) have integer solutions (the ones that do are studied in the [[Divisibility]] chapter), for instance
+
+$$
+2\cdot x=3
+$$
+
+has no solutions in $\mathbb Z$. I followed a similar construction and solved this by introducing _fractions_: $2\cdot\boxed{\frac32}=3$ in the bigger space of rationals $\mathbb Q$.
+
+But even in $\mathbb Q$, not all equations have solutions, for instance those involving _powers_ (repeated multiplication):
+
+$$
+x^2=2
+$$
+
+This construction is out of scope of this course as it is considerably different and more complicated, but the general idea holds: I invented _positive roots_ to solve it: $(\sqrt2)^2=2$. This much bigger space (this one is uncountable) is the reals $\mathbb R$.
+
+What equations have no solutions in the reals? One example involves _negative roots_, like $x^2=-1$. So to construct the next stage, the complex numbers $\mathbb C$, I simply invent a solution for it and call it the _imaginary unit_ $i$.
+
+>[!info] Opinion.
+>
+>I argue that the only reason this seems more arbitrary (or even like I'm cheating) is because of habit, and not due to any theoretical barrier. Remember how negative numbers make no sense in elementary school and now you find them trivial. The same way, had you been introduced to imaginary numbers earlier, you would find them just as **sensible**.
+
 I will skip the more formal construction of $\mathbb C$ as a quotient over $\mathbb R\times\mathbb R$ in favor of a simpler construction of more immediate use.
 
 The set of complex numbers is given by
@@ -27,7 +59,7 @@ Complex numbers are used in many places, from electrical engineering to solving 
 >
 >>[!check]- Solution.
 >>
->>[This 3b1b video has the best explanation](https://youtu.be/bOXCLR3Wric?si=IctOBc5as_AXBhlc).
+>>[This 3b1b video](https://youtu.be/bOXCLR3Wric?si=IctOBc5as_AXBhlc) has the best explanation.
 
 Notice that if you restrict the product to multiplying only reals on the left, then this is a real scalar product on the set of complex numbers. Moreover, the following is true.
 
@@ -71,13 +103,27 @@ The first result about the complex numbers I will prove to you is that square ro
 >
 >For all $z\in\mathbb C$, there is a $w\in\mathbb C$ such that $w^2=z$.
 
->[!proof] Proof in Tutorial 12.
+>[!proof] Proof:
+>
+>Suppose that $z=a+ib$. It is sufficient to find reals $x$ and $y$ such that
+>
+>$$
+>(x^2-y^2)+i(2xy)=(x+iy)^2=a+ib\quad\iff\quad\begin{cases}x^2-y^2=a\\2xy=b\end{cases}.
+>$$
+>
+>Squaring and adding, $(x^2+y^2)^2=a^2+b^2$, from where $x^2+y^2=\sqrt{a^2+b^2}$, meaning I have reduced the problem to applying the quadratic formula (for real roots). Therefore, $x=\pm\alpha$ and $y=\pm\beta$ where
+>
+>$$
+>\alpha=\sqrt{\frac{a+\sqrt{a^2+b^2}}2}\qquad\beta=\sqrt{\frac{-a+\sqrt{a^2+b^2}}2}.
+>$$
+>
+>Finally, the two (possibly equal) roots are $w=\pm(\alpha+\mu i\beta)$ where $\mu=\begin{cases}1&b\geq0\\-1&b<0\end{cases}$.
 
 >[!abstract] Example.
 >
 >The square roots of $z=8-6i$ are given by $\alpha=3,\beta=1$, and thus $w=\pm(3-i)$.
 
-## Geometry of $\mathbb C$
+## Geometry of the complex plane
 
 From now on, $z=a+ib$ and $w$ are complex numbers.
 
@@ -100,7 +146,7 @@ From now on, $z=a+ib$ and $w$ are complex numbers.
 >[!thm] Basic properties of conjugates.
 >
 >5. $\overline{\overline z}=z$. (The conjugate is an _involution_, also mentioned in this [[Graphs#Connectivity and trees|hard exercise]])
->6. $\overline{z+w}=\overline z+\overline w$ and $\overline{zw}=\overline z\overline w$.
+>6. $\overline{z+w}=\overline z+\overline w$ and $\overline{zw}=\overline z\cdot\overline w$.
 >7. $\overline{\frac zw}=\frac{\overline z}{\overline w}$ when $w\neq 0$.
 >8. $\Re(z)=\frac{z+\overline z}2$ and $\Im(z)=\frac{z-\overline z}{2i}$.
 >9. $\overline z=z$ if and only if $\Im(z)=0$ if and only if $z\in\mathbb R$.
@@ -181,7 +227,7 @@ $$
 
 Very curious identity, as it combines the simplest equivalence relation (equality), the three fundamental operations (addition, multiplication and exponentiation) with the four fundamental constants (the two identities, the imaginary unit, and the transcendental numbers $\pi$ and $e$) all exactly once.
 
-## Topology of $\mathbb C$
+## Topology of the complex plane
 
 I already established that $\mathbb C$ is a metric space with the metric given by the difference of the modulus. Thus, the section on [[Metric spaces|metric spaces]] applies to $\mathbb C$ as well.
 
