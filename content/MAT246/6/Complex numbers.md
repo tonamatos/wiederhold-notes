@@ -123,6 +123,14 @@ The first result about the complex numbers I will prove to you is that square ro
 >
 >The square roots of $z=8-6i$ are given by $\alpha=3,\beta=1$, and thus $w=\pm(3-i)$.
 
+>[!warning] Warning:
+>
+>Be careful not to assume statements about the complex numbers that you know are true for the reals. Here is an example:
+>
+>$$
+>-1=i\cdot i=\sqrt{(-1)}\sqrt{(-1)}=\sqrt{(-1)(-1)}=\sqrt{1}=1
+>$$
+
 ## Geometry of the complex plane
 
 From now on, $z=a+ib$ and $w$ are complex numbers.

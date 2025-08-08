@@ -432,7 +432,7 @@ Recall that $K_2$ is a just an edge. As an exercise, try proving the following r
 
 >[!info] Remark.
 >
->The theorem above and corollary below are also true for infinite graphs by a compactness argument, for example the [De Bruijn–Erdős theorem](https://en.wikipedia.org/wiki/De_Bruijn%E2%80%93Erd%C5%91s_theorem_(graph_theory)). The proof is outside of the scope of the course.
+>The theorem above and corollary below are also true for infinite graphs by a compactness argument, for example the [De Bruijn-Erdős theorem](https://en.wikipedia.org/wiki/De_Bruijn%E2%80%93Erd%C5%91s_theorem_(graph_theory)). The proof is outside of the scope of the course.
 
 >[!thm] Corollary.
 >

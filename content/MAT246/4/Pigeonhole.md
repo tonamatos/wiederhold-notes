@@ -113,7 +113,7 @@ In a perhaps more mathematical language:
 >
 >Among any $n+1$ positive integers, two of them have a distance divisible by $n$.
 
->[!note] **Hard** exercise (special case of the [Erdős–Szekeres theorem](https://en.wikipedia.org/wiki/Erd%C5%91s%E2%80%93Szekeres_theorem)).
+>[!note] **Hard** exercise (special case of the [Erdős-Szekeres theorem](https://en.wikipedia.org/wiki/Erd%C5%91s%E2%80%93Szekeres_theorem)).
 >
 >Prove that any sequence of $n^2+1$ different naturals contains a monotonic subsequence of length $n+1$.
 >
