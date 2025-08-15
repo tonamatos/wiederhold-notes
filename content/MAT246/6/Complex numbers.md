@@ -263,17 +263,16 @@ The intuition behind the last condition is that points far from the origin shoul
 >
 >$\mathbb C^*$ is compact.
 
->[!proof] Proof.
+The following lemma is left as an exercise.
+
+>[!thm] Lemma.
+>For every $U\in\tau(\mathbb C^*)$ if $\infty\in U$, then $\mathbb C\setminus U$ is compact in $\mathbb C$.
+
+>[!proof] Proof of the theorem:
 >
->>[!fail] Removed during PS6.
+>Take $\mathcal U$, an open cover of $\mathbb C^*$, and split it as $\mathcal U_\infty:=\{U\in\mathcal U:\infty\in U\}$ and $\mathcal U_0:=\mathcal U\setminus\mathcal U_\infty$. Note that the former cannot be empty by the definition of cover. Also, $U_\infty:=\bigcup\mathcal U_\infty$ is an open set of $\mathbb C^*$ containing $\infty$. Then, by the lemma, $\mathbb C\setminus U_\infty$ is a compact subset of $\mathbb C$. Note that $\mathcal U_0=\{U\cap\mathbb C:U\in\mathcal U_0\}$ and so by basic property (2), the elements of $\mathcal U_0$ are open in both $\mathbb C$ and $\mathbb C^*$.
 >
->>[!hint] Hint.
->>
->>First prove this lemma using basic property (3):
->>>[!thm] Lemma.
->>>For every $U\in\tau(\mathbb C^*)$, $\mathbb C\setminus U$ is compact in $\mathbb C$.
->>
->>If you are not using all three basic properties above, you are probably doing something wrong. Make sure you keep track of the space in which each set is open! Being compact in one space does not mean being compact in the other space. $\mathbb C$ and $\mathbb C^*$ are very **different** topological spaces.
+>It follows that $\mathcal U_0$ is an open cover (in $\mathbb C$) for the compact set $\mathbb C\setminus U_\infty$ and thus, by definition, it has a finite subcover $\mathcal F$. By basic property (1), the members of $\mathcal F$ are also open in $\mathbb C^*$. Thus, it is clear that $\mathcal F\cup\{U_\infty\}$ is then a finite subcover of $\mathbb C^*$.
 
 >[!hint] Remark.
 >
