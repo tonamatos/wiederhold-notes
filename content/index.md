@@ -25,7 +25,7 @@ I also defined some common environments such as:
 
 These can be nested, cited, automatically numbered, etc.
 
-My favorite feature is link previewing. For example, hover your mouse over [[cantor#^cantor|Cantor's theorem]].
+My favorite feature is **link previewing**.
 
 ---
 
