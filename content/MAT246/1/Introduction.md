@@ -2,9 +2,11 @@
 title: "1.1. Introduction"
 draft: false
 ---
-This is the [Baron Münchhausen](https://en.wikipedia.org/wiki/File:Muenchhausen_Herrfurth_7_500x789.jpg).
+This is the Baron Münchhausen:
 
-In one of his adventures, he rides his horse into a marsh and get trapped in the mud. He pulls from his hair upwards, freeing both the horse and himself from his fate.
+![Baron Münchhausen](https://upload.wikimedia.org/wikipedia/commons/3/3b/Muenchhausen_Herrfurth_7_500x789.jpg)
+
+In one of his adventures, he rides his horse into a marsh and gets trapped in the mud. He pulls from his hair upwards, freeing both the horse and himself from his fate.
 
 In real life, he would not be able to do this without standing on **solid ground**. This begs the question: what is math build on?
 

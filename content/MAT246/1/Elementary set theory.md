@@ -64,6 +64,8 @@ Below, _family_ is just another word for set, to avoid saying "set of sets."
 >1. $\mathcal P(\emptyset)=\{\emptyset\}$.
 >2. $\mathcal P(\{\emptyset\})=\{\emptyset,\{\emptyset\}\}$.
 
+![Powerset](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Hasse_diagram_of_powerset_of_3.svg/330px-Hasse_diagram_of_powerset_of_3.svg.png)
+
 In this course, I do not formally define the _ordered pair_ $(a,b)$, but all you need to know about it is that $(a,b)=(c,d)$ if and only if $a=c$ and $b=d$. So, for instance, $(0,1)\neq(1,0)$ even though $\{0,1\}=\{1,0\}$.
  
 >[!def] Definition.
@@ -73,6 +75,8 @@ In this course, I do not formally define the _ordered pair_ $(a,b)$, but all you
 >2. The _intersection_ $A\cap B=\{x:x\in A\land x\in B\}$. ($\land$ represents "and")
 >3. The _Cartesian product_ $A\times B=\{(a,b):a\in A\land b\in B\}$.
 >4. The _difference_ $A\setminus B=\{a\in A:a\notin B\}$.
+
+![intersection of two sets](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Venn_A_intersect_B.svg/500px-Venn_A_intersect_B.svg.png)
 
 >[!note] Exercise.
 >
@@ -115,9 +119,3 @@ This definition is **informal** and this concept will be formalized in a later c
 >
 >1. Subsets of finite sets are finite.
 >2. The union of two finite sets is finite.
-
-## The lattice of subsets
-
->[!warning] Note:
->
->The concept of _lattice_ is not explicitly part of the course, but several important examples are seen in the lectures. These follow informal discussions (and are hence inadequate for these notes) that summarize large portions of theory.

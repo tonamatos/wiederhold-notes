@@ -174,6 +174,8 @@ From now on, $z=a+ib$ and $w$ are complex numbers.
 >12. $|\Re(z)|,|\Im(z)|\leq|z|\leq|\Re(z)|+|\Im(z)|$.
 >13. $|z+w|\leq|z|+|w|$ and $\left||z|-|w|\right|\leq|z\pm w|$.
 
+![complex moduli](https://upload.wikimedia.org/wikipedia/commons/d/d6/Argandgaussplane.png)
+
 >[!def] Complex arguments.
 >
 >For $z\neq0$, the _principal argument of $z$_ is the unique $\arg(z)\in(-\pi,\pi]$ that measures the angle between $z$ and the positive real axis. Also, I denote $\operatorname{Arg}(z):=\{\arg(z)+2\pi k:k\in\mathbb Z\}$.
@@ -202,6 +204,8 @@ From now on, $z=a+ib$ and $w$ are complex numbers.
 >
 >Prove 17 above changing $n\in\mathbb N$ to $n\in\mathbb Z$.
 
+![polar coordinates](https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Euler%27s_formula.svg/500px-Euler%27s_formula.svg.png)
+
 >[!thm] Complex roots.
 >
 >For nonzero $z$, $w^n=z$ has exactly $n$ complex solutions for $w$. A solution is called an _$n$th root of $z$_ and the **set** of all solutions is denoted by $z^{1/n}$.
@@ -220,6 +224,8 @@ From now on, $z=a+ib$ and $w$ are complex numbers.
 >[!abstract] Example (_complex roots of unity_).
 >
 >Let $z=1$. Then the $n$th roots are $w_k=\cos\left(\frac{2k\pi}n\right)+i\sin\left(\frac{2k\pi}n\right)$ for $k=0,1,\dots,n-1$, and hence if $u:=w_1$, then $1^{1/n}=\{u^j:0\leq j<n\}$ are all roots of unity.
+
+![fifth roots of unity](https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/One5Root.svg/500px-One5Root.svg.png)
 
 >[!thm] Proposition.
 >
@@ -282,10 +288,6 @@ This section just presented the simplest example of what topologists call the _A
 
 ### Stereographic projection
 
->[!warning] Note:
->
->This section requires lots of sketches on the board.
-
 Let $S_2:=\{(x,y,z)\in\mathbb R^3:x^2+y^2+z^2=1\}$ be the three-dimensional unit sphere and consider the map $E:S_2\to\mathbb C^*$ given by $E(0,0,1)=\infty$ and
 
 $$
@@ -301,6 +303,8 @@ in any other case.
 >[!def] Extended metric.
 >
 >The metric $\delta$ on $\mathbb C^*$ is defined by $\delta(z,w):=d(E^{-1}(z),E^{-1}(w))$ where $d$ is the Euclidean metric on $\mathbb R^3$.
+
+![Riemann sphere](https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/RiemannSphere.png/600px-RiemannSphere.png)
 
 >[!note] Exercise.
 >

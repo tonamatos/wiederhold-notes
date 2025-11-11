@@ -33,10 +33,6 @@ If $f$ is bijective, the _inverse of $f$_ is the function $f^{-1}=\{(b,a):(a,b)\
 >The set of all functions $A\to B$ is denoted by $B^A$. This choice of symbol is motivated in the tutorials, where it is shown that for finite sets $|B^A|=|B|^{|A|}$.
 ## Equinumerosity
 
->[!warning] Note:
->
->This topic is introduced in the lectures. The discussion is inadequate for these notes.
-
 >To measure is to compare.
 
 >[!def] Notation.
@@ -57,7 +53,7 @@ Compare these properties with others mentioned in previous chapters, such as [[R
 
 >[!warning]- Metamathematical warning (safe to ignore):
 >
->Despite appearances, it is **not** correct to say that this symbol defines an equivalence relation. An explanation for this goes well beyond the scope of this course but will be mentioned in the lectures.
+>Despite appearances, it is **not** correct to say that this symbol defines an equivalence relation. An explanation for this goes well beyond the scope of this course.
 >
 >For the sake of intuition, you can think of _cardinal numbers_ as precisely the equivalence classes of this relation.
 
@@ -67,7 +63,7 @@ Earlier I defined the word _finite_ in terms of natural numbers. Indeed, a way t
 
 >[!question] Reflect.
 >
->Well-defined, in this instance, means that there could be more than one natural satisfying the definition. How do you know which one to pick? Of course this does not happen, but I must prove this to you.
+>_Well-defined_, in this instance, means that there could be more than one natural satisfying the definition. How do you know which one to pick? Of course this does not happen, but I must prove this to you.
 
 It wasn't until 1888 that [Dedekind](https://en.wikipedia.org/wiki/Dedekind-infinite_set) came up with a definition of _finite set_ that did not need the naturals to be constructed first. I will not use the definition, but if you are curious, one can prove that a set is finite if and only if it is not equinumerous with a proper subset of itself. This can be used to define finiteness without reference to any numbers. The fact that $\mathbb N$ is infinite in this context is known as _Galileo's paradox_.
 

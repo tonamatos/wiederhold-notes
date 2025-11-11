@@ -6,10 +6,6 @@ draft: false
 
 Let me relax the definition of equinumerous a bit. Often I want to compare the sizes of sets without declaring exactly what that size is. I merely want to point out that one set has _at least as many elements_ as another set.
 
->[!warning] Note:
->
->I give precise intuition for this in the lectures. This requires pointing and sketching so I will not include that here.
-
 >[!def] Definition.
 >
 >For two sets $A$ and $B$, I use the symbol $|A|\leq|B|$ to indicate that there is an injective function from $A$ to $B$.
@@ -57,10 +53,6 @@ It is surprisingly deceptive knowing which proofs are easy and which ones are ha
 >5. (Hilbert) $\mathbb Z$.
 >6. $\mathbb N\times\mathbb N$.
 >7. The set of positive rationals.
-
->[!warning] Note:
->
->These proofs are best understood by interactively sketching and drawing, in the lectures.
 
 >[!proof]- Proof:
 >
@@ -157,10 +149,6 @@ An exercise worth writing down before continuing is below.
 >[!note] Exercise.
 >
 >Formalize and write down an argument that $|\{0,1\}^X|=2^{|X|}=|\mathcal P(X)|$. You may **not** use this for PS3, as it is the same idea as below, just for functions instead of subsets.
-
->[!warning] Note:
->
->The diagram seen in lectures should clarify the following argument.
 
 >[!proof]+ Proof of Cantor's theorem.
 >

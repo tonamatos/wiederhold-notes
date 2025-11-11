@@ -2,10 +2,6 @@
 title: "2.1. Construction of Z"
 draft: false
 ---
->[!warning] Note:
->
->Due to time constrains caused by holidays, most of this section is likely to be skipped during lectures or only treated informally. You can read the details here, but only things mentioned in the lectures are part of the evaluation.
-
 Algebraically, I am interested in solving equations of the form
 
 $$

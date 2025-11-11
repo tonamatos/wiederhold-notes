@@ -1,6 +1,6 @@
 ---
 title: "Final guide"
-draft: false
+draft: true
 ---
 >[!hint] Five out of the six final questions will be slight variations of problems from this list.
 

@@ -8,9 +8,6 @@ Informally, a _field_ is an algebraic structure in which all non-zero elements a
 >
 >Look back at your notes. You should be able to prove that any non-zero element of $\mathbb Z_p$ is invertible just by citing the right things.
 
->[!warning] Note:
->
->Most of this section is discussed informally and actively (i.e. with a lot of me pointing at things) during the lecture. As such, these notes do not cover said discussion.
 ## Fermat's little theorem
 
 Let $p$ be a prime number.
@@ -24,8 +21,6 @@ I prove this by first considering a lemma.
 >[!thm] Lemma.
 >
 >Let $0<a<p$ and $0<i\leq j<p$. If $ia\equiv_pja$, then $i=j$.
-
->[!proof] Proofs are informally seen in lectures.
 
 >[!abstract] Example.
 >

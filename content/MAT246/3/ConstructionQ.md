@@ -8,6 +8,8 @@ The construction of the rationals follows a very similar procedure to the [[Cons
 >
 >I wrote this page assuming the reader is comparing it with the one linked before, it will double the benefit of reading this one. Most ideas are the same, changing the sum to a product and ensuring everything works well.
 
+![common sets](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Real_numbers.svg/500px-Real_numbers.svg.png)
+
 Consider the following equation.
 
 $$

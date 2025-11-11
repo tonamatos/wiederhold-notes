@@ -49,10 +49,6 @@ This is another illustrative example of how strong induction can be useful. Atte
 >
 >(For CS students) Implement this proof as an actual recursive **algorithm**.
 
->[!warning] Note:
->
->Illustrative examples are seen in the lectures.
-
 ## Divisibility
 
 >[!def] Definition.
@@ -119,9 +115,3 @@ To decide if a number is prime, it is not necessary to check for all numbers sma
 >>[!hint]- Hint.
 >>
 >>Show that $k!+2,k!+3,\dots,k!+k$ are always composite.
-
-## The lattice of integer divisibility
-
->[!warning] Note:
->
->The concept of _lattice_ is not explicitly part of the course, but several important examples are seen in the lectures. These follow informal discussions (and are hence inadequate for these notes) that summarize large portions of theory.

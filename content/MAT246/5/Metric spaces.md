@@ -50,10 +50,6 @@ is sometimes referred to as the _taxicab metric_. To see why, draw $\mathbb R^2$
 
 ## Open and closed sets
 
->[!warning] Note:
->
->Most intuitive examples are done in details in the lectures. They involve many sketches, which is why they are not included in these notes.
-
 From now on, let $(X,d)$ be an abstract metric space. Since my course only deals with a very short introduction, for the most part you can safely assume that $X=\mathbb R$ with the Euclidean metric.
 
 >[!def] Definition of open.
@@ -95,10 +91,6 @@ It is obvious that $A\subseteq\overline A$.
 >
 >Prove that $\overline{\overline A}=\overline A$ (_Idempotency_). In particular, closures are always closed. Put in different words, a set is closed if and only if it is equal to some closure.
 
->[!info] Note:
->
->Sadly, I will not have time to talk about general topology, but many examples I will cover can be extended to much more general structures. In fact, a good portion of the results I will show you hold in these spaces. Given the scope of this course, I will only deal with very select metric spaces as examples, however.
-
 The following theorem is the actual definition of an abstract _topology_, which I will not cover in this course.
 
 >[!thm] Theorem ("Metric spaces are _topological spaces_").
@@ -106,10 +98,6 @@ The following theorem is the actual definition of an abstract _topology_, which 
 >1. $X$ and $\emptyset$ are open.
 >2. The union of open sets is open.
 >3. The intersection of finitely many closed sets is closed.
-
->[!proof]- Proof:
->
->>[!info] In lectures.
 
 From now on, I will denote the collection of all open subsets of $X$ by $\tau(X)$. This set is typically called the _topology_ of $X$.
 

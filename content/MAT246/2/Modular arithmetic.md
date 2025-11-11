@@ -2,12 +2,6 @@
 title: "2.5. Modular arithmetic"
 draft: false
 ---
-## Informal introduction
-
->[!warning] Note:
->
->Informal discussions are inadequate for these notes.
-
 ## The ring of congruences modulo $m$
 
 >[!def] Definition.
@@ -39,17 +33,13 @@ As an example, I compute the multiplication table modulo 5.
 
 ### Multiplication Table Modulo 5
 
-| × mod 5 | 0 | 1 | 2 | 3 | 4 |
-|--------:|--:|--:|--:|--:|--:|
-| **0**   | 0 | 0 | 0 | 0 | 0 |
-| **1**   | 0 | 1 | 2 | 3 | 4 |
-| **2**   | 0 | 2 | 4 | 1 | 3 |
-| **3**   | 0 | 3 | 1 | 4 | 2 |
-| **4**   | 0 | 4 | 3 | 2 | 1 |
-
->[!warning] Note:
->
->An informal discussion is presented during the lectures that compares different multiplication tables and highlights insights about major theorems in the field.
+| × mod 5 |   0 |   1 |   2 |   3 |   4 |
+| ------: | --: | --: | --: | --: | --: |
+|   **0** |   0 |   0 |   0 |   0 |   0 |
+|   **1** |   0 |   1 |   2 |   3 |   4 |
+|   **2** |   0 |   2 |   4 |   1 |   3 |
+|   **3** |   0 |   3 |   1 |   4 |   2 |
+|   **4** |   0 |   4 |   3 |   2 |   1 |
 
 Having addition and multiplication, exponentiation follows.
 
@@ -64,8 +54,6 @@ Having addition and multiplication, exponentiation follows.
 >[!note] Exercise.
 >
 >Use the above to compute $497^{1003}$ mod $498$.
-
-The following is proved as part of the above discussion in the lectures.
 
 >[!thm] Proposition.
 >
@@ -166,10 +154,6 @@ Where to begin? A common technique in mathematics is to assume that a solution e
 - produces enough properties so that you can narrow down and eventually find the solution; or
 - yields a contradiction, in which case you can guarantee no solution exists.
 
->[!warning] Note:
->
->In the lectures, I guide students through this process interactively. Here I just spoil the whole solution for the sake of completeness.
-
 ### Solution criterion
 
 >[!thm] Theorem.
@@ -268,4 +252,4 @@ For the scope of this course, it is important that you know that this theorem ex
 
 >[!warning] Warning:
 >
->Careful when using online calculators (or worse, AI) to compute these solutions. They are often wrong or incomplete. In the lectures, I show how the top 3 Google searchable calculators give wrong answers.
+>Careful when using online calculators (or worse, AI) to compute these solutions. They are often wrong or incomplete. The top 3 Google searchable calculators give wrong answers.

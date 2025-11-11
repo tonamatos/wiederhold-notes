@@ -58,10 +58,6 @@ I will answer the important question of how to use this in the following subsect
 
 ### The extended Euclidean algorithm
 
->[!warning] Note:
->
->These sort of examples with many moving steps are best understood during a **live lecture**, not reading them on a static site.
-
 Let me do an example where I compute $\gcd(56,15)$ using the Euclidean algorithm.
 
 First I divide and find the remainder: $56=15\cdot3+\boxed{11}$. Thus, $\gcd(56,15)=\gcd(15,11)$.

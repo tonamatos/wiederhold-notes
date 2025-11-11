@@ -2,10 +2,6 @@
 title: "4.4. Graph theory"
 draft: false
 ---
->[!warning] Note:
->
->The following results are all proved informally in lectures.
-
 >[!thm] Proposition.
 >
 >In any party with at least two people, there are two people that are friends with the exact same number of guests.
@@ -21,6 +17,8 @@ draft: false
 >[!proof]+ Proof:
 >
 >Fix a guest $x$ and denote by $F$ the set of guests that are friends with $x$ and by $S$ the set of guests that are not friends with $x$. By the pigeonhole principle, either $|F|\geq3$ or $|S|\geq3$. Without loss of generality (by interchanging all friends with strangers and vice versa), suppose the former happens. Then, select three guests in $F$. Either they are mutual strangers, in which case I am done, or two of them are friends, thus with $x$ the three are mutual friends.
+
+![party problem](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Ramsey_theorem_visual_proof.svg/500px-Ramsey_theorem_visual_proof.svg.png)
 
 ## A glimpse into Ramsey theory (out of scope of this course)
 
@@ -86,10 +84,6 @@ Instead of writing an edge as $\{u,v\}$, I will write $uv$.
 >$$
 
 This proof illustrates an important combinatorial technique called _double counting_.
-
->[!proof]- Proof:
->
->>[!warning] In lectures.
 
 Say a vertex is _odd_ if it has odd degree.
 
@@ -172,6 +166,7 @@ For any graph $G$ on $n$ vertices, the statement $G\to K_n$ holds. Thus it makes
 >
 >Suppose that $\varphi:G\to K_{\chi(G)}$. Prove that for any two distinct $i,j\in V(K_k)$, there is an edge from $\varphi^{-1}\{i\}$ to $\varphi^{-1}\{j\}$ in $G$.
 
+![3-colorings](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Graph_with_all_three-colourings_2.svg/500px-Graph_with_all_three-colourings_2.svg.png)
 ### An application: scheduling problems
 
 Your university has a bunch of courses: MAT224, MAT246, MAT237, etc. Students can be enrolled in multiple courses. You need to schedule the exams so that every student can attend without conflicts.
@@ -218,6 +213,16 @@ The most important types of morphisms are defined here.
 >
 >The _group_ (I didn't define group in this course, but calling this a set is sufficient for my purposes) of all automorphisms of $G$ is denoted by $\operatorname{Aut}(G)$.
 
+Two non-isomorphic graphs with the same number of vertices and edges:
+
+![non-isomorphic graphs](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Whitneys_theorem_exception.svg/500px-Whitneys_theorem_exception.svg.png)
+
+The following two graphs are isomorphic:
+
+![Petersen graph 1](https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Petersen1_tiny.svg/400px-Petersen1_tiny.svg.png)
+
+![Petersen graph 2](https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Petersen2_tiny.svg/500px-Petersen2_tiny.svg.png)
+
 >[!thm] Remark.
 >
 >In the class of all graphs, $\simeq$ is an equivalence relation.
@@ -229,10 +234,6 @@ The most important types of morphisms are defined here.
 >>[!note] **Hard** exercise ($\to$ is not _antisymmetric_).
 >>
 >>Find two finite non-isomorphic graphs $G$ and $H$ such that $G\to H$ and $H\to G$. You can even find such graphs of different orders.
-
->[!warning] Note:
->
->Most examples are seen in lectures as it requires sketching on the board.
 
 >[!note] Exercise.
 >
@@ -294,6 +295,10 @@ Since the identity is an automorphism of any graph $G$, $\operatorname{Aut}(G)$ 
 
 A graph $G$ is called _asymmetric_ if $|\operatorname{Aut}(G)|=1$. Equivalently, if all its orbits are singletons, or if no pair of vertices are similar.
 
+An example of an asymmetric graph that is 3-regular:
+
+![Frucht graph](https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Frucht_graph.dot.svg/500px-Frucht_graph.dot.svg.png)
+
 >[!note] **Hard** exercise.
 >
 >Prove that all asymmetric graphs have order $6$ or more. Prove that for ever $n\geq6$ there is an asymmetric graph of order $n$.
@@ -333,6 +338,10 @@ A graph $G$ is called _asymmetric_ if $|\operatorname{Aut}(G)|=1$. Equivalently,
 >A graph $G$ is _connected_ if it has a single component. That is, if every pair of vertices is a pair of endpoints of some path in $G$.
 >
 >A _tree_ is a connected graph with no cycles.
+
+A tree:
+
+![Tree](https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Tree_graph.svg/360px-Tree_graph.svg.png)
 
 >[!abstract] Examples.
 >
@@ -420,6 +429,8 @@ Recall that $K_2$ is a just an edge. As an exercise, try proving the following r
 >2. Complete bipartite graphs are bipartite.
 >3. Even cycles are bipartite but odd cycles are not. A much stronger result is true, see below.
 
+![Bipartite graph](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Biclique_K_3_5_bicolor.svg/500px-Biclique_K_3_5_bicolor.svg.png)
+
 >[!thm] Theorem.
 >
 >A finite graph is bipartite if and only if it contains no odd cycle.
@@ -445,6 +456,8 @@ This section deals with a graph I personally find interesting, as it lies in the
 First, let me define the _Boolean lattice graph_ $B_n$. Consider $2^n$, the set of all binary sequences of length $n$, as vertex set and make two sequences adjacent if they differ in exactly one coordinate (or _bit_). Thus, for instance, $10\boxed110$ and $10\boxed010$ are adjacent in $B_5$, but $00000$ and $10001$ are not.
 
 For instance, $B_1$ has just a single edge $\{0,1\}$. $B_2$ is isomorphic to the square $C_4$. $B_3$ when drawn looks like a three-dimensional cube. $B_4$ looks like a tesseract. You get the idea.
+
+![B_3](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Hamming_distance_3_bit_binary.svg/300px-Hamming_distance_3_bit_binary.svg.png)
 
 >[!thm] Proposition.
 >

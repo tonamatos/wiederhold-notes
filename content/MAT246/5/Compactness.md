@@ -99,6 +99,8 @@ Now I can provide the first non-trivial example of a compact set.
 >
 >The closed interval $[0,1]$ is a compact subset of $\mathbb R$.
 
+![intervals](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Compact.svg/800px-Compact.svg.png)
+
 The proof is trickier than you might think. Luckily, once we know this, almost all compact sets of reals are easy to describe.
 
 >[!proof]+ Proof:

@@ -73,7 +73,7 @@ $$
 2^{96}=2^{4\cdot(96/4)}=(2^4)^{96/4}\equiv_51^{96/4}=1.
 $$
 
-In the lectures I prove that the only square roots of 1 mod a prime are $\pm1$. Then, $x\equiv_51,4$.
+The only square roots of 1 mod a prime are $\pm1$. Then, $x\equiv_51,4$.
 
 Now, again by Fermat's little theorem, $23^{96}\equiv1\pmod{97}$. Therefore, the system reduces to
 

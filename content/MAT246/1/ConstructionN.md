@@ -2,10 +2,6 @@
 title: "1.5. The naturals"
 draft: false
 ---
->[!warning] Note:
->
->Informal discussions are inadequate for these notes and are thus mostly omitted. For this reason, I assume the following and provide no proof in these notes.
-
 The _algebraic structure_ of $\mathbb N$ may be summarized as follows.
 
 >[!thm] Axiom ($\mathbb N$ is a _commutative monoid_).

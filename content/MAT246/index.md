@@ -1,15 +1,12 @@
 ---
-title: "MAT246"
+title: Concepts in Abstract Math
 draft: false
 ---
->[!warning] Note:
->These are **only** brief summaries, not full class notes. Many crucial details are missing.
->
->**If you skip lectures, you will fall behind. Reading these is no substitute for attending class.**
-
----
-
 # Concepts in Abstract Mathematics
+
+>[!info] Note:
+>
+>I wrote these notes during my position as **Course Instructor** for MAT246 in the summer of 2025 at the University of Toronto. They are based on my teaching of the several instances of the course, as well as other courses like MAT315 and MAT224.
 
 ## Table of Contents
 
@@ -44,10 +41,6 @@ Some general advice on learning mathematics can be found [[Advice|here]].
 5. [[Continuum|The continuum]]
 6. [[Advanced problems|More set theory exercises]]
 
-# **June break & midterm**
-
-[[midterm_solutions|Midterm solutions]]
-
 ### 4. Combinatorics
 #### Enumerative combinatorics
 1. [[Enumerative|Permutations and combinations]]
@@ -68,10 +61,6 @@ Some general advice on learning mathematics can be found [[Advice|here]].
 ---
 
 ## Additional resources
-
-My course is self-contained. Everything you need to understand and solve any question whose answer constitutes a part of your **grade** can be answered with the material I cover in my lectures. Some of it is mentioned on this site.
-
-**Important:** I do not follow any book, notes or content other than my own, but most topics are covered in many other sources. Students are nevertheless encouraged to consult additional resources like the following. Here are a few:
 
 ### All topics
 - Dana C. Ernst - _Introduction to Proof via Inquiry-Based Learning_ [Link](https://danaernst.com/IBL-IntroToProof/)
