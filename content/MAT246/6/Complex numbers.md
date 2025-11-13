@@ -174,7 +174,7 @@ From now on, $z=a+ib$ and $w$ are complex numbers.
 >12. $|\Re(z)|,|\Im(z)|\leq|z|\leq|\Re(z)|+|\Im(z)|$.
 >13. $|z+w|\leq|z|+|w|$ and $\left||z|-|w|\right|\leq|z\pm w|$.
 
-![complex moduli](https://upload.wikimedia.org/wikipedia/commons/d/d6/Argandgaussplane.png)
+![complex moduli|200](https://upload.wikimedia.org/wikipedia/commons/d/d6/Argandgaussplane.png)
 
 >[!def] Complex arguments.
 >
@@ -204,7 +204,7 @@ From now on, $z=a+ib$ and $w$ are complex numbers.
 >
 >Prove 17 above changing $n\in\mathbb N$ to $n\in\mathbb Z$.
 
-![polar coordinates](https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Euler%27s_formula.svg/500px-Euler%27s_formula.svg.png)
+![polar coordinates|300](https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Euler%27s_formula.svg/500px-Euler%27s_formula.svg.png)
 
 >[!thm] Complex roots.
 >
@@ -225,7 +225,7 @@ From now on, $z=a+ib$ and $w$ are complex numbers.
 >
 >Let $z=1$. Then the $n$th roots are $w_k=\cos\left(\frac{2k\pi}n\right)+i\sin\left(\frac{2k\pi}n\right)$ for $k=0,1,\dots,n-1$, and hence if $u:=w_1$, then $1^{1/n}=\{u^j:0\leq j<n\}$ are all roots of unity.
 
-![fifth roots of unity](https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/One5Root.svg/500px-One5Root.svg.png)
+![fifth roots of unity|300](https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/One5Root.svg/500px-One5Root.svg.png)
 
 >[!thm] Proposition.
 >
@@ -304,7 +304,7 @@ in any other case.
 >
 >The metric $\delta$ on $\mathbb C^*$ is defined by $\delta(z,w):=d(E^{-1}(z),E^{-1}(w))$ where $d$ is the Euclidean metric on $\mathbb R^3$.
 
-![Riemann sphere](https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/RiemannSphere.png/600px-RiemannSphere.png)
+![Riemann sphere|300](https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/RiemannSphere.png/600px-RiemannSphere.png)
 
 >[!note] Exercise.
 >

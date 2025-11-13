@@ -4,7 +4,7 @@ draft: false
 ---
 This is the Baron Münchhausen:
 
-![Baron Münchhausen](https://upload.wikimedia.org/wikipedia/commons/3/3b/Muenchhausen_Herrfurth_7_500x789.jpg)
+![Baron Münchhausen|200](https://upload.wikimedia.org/wikipedia/commons/3/3b/Muenchhausen_Herrfurth_7_500x789.jpg)
 
 In one of his adventures, he rides his horse into a marsh and gets trapped in the mud. He pulls from his hair upwards, freeing both the horse and himself from his fate.
 

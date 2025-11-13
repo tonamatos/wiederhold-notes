@@ -2,8 +2,6 @@
 title: Concepts in Abstract Math
 draft: false
 ---
-# Concepts in Abstract Mathematics
-
 >[!info] Note:
 >
 >I wrote these notes during my position as **Course Instructor** for MAT246 in the summer of 2025 at the University of Toronto. They are based on my teaching of the several instances of the course, as well as other courses like MAT315 and MAT224.

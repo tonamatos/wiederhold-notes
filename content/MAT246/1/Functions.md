@@ -86,6 +86,10 @@ My definition does not require any assumptions about the set $A$ and still makes
 
 Write the _contrapositive_ statement of the first definition above. When would you use the contrapositive rather than the direct statement? Write out the second definition as a _quantified_ statement.
 
+A non-injective function:
+
+![|300](https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Injection_keine_Injektion_2a.svg/500px-Injection_keine_Injektion_2a.svg.png)
+
 >[!note] Exercise.
 >
 >Out of all the examples mentioned in this page, decide which ones are injective, which ones are surjective? Write a proof for each claim.

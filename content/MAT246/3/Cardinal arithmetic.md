@@ -10,6 +10,8 @@ For this section, suppose that $f:A\to B$ and $g:B\to C$ are functions.
 >
 >The _composition of $f$ and $g$_ is the function $g\circ f:A\to C$ given by $g\circ f(a):=g(f(a))$.
 
+![|300](https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Example_for_a_composition_of_two_functions.svg/499px-Example_for_a_composition_of_two_functions.svg.png)
+
 >[!note] Exercises.
 >
 >1. Prove that the composition of injective (surjective) functions is again injective (surjective).

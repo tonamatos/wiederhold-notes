@@ -18,7 +18,7 @@ draft: false
 >
 >Fix a guest $x$ and denote by $F$ the set of guests that are friends with $x$ and by $S$ the set of guests that are not friends with $x$. By the pigeonhole principle, either $|F|\geq3$ or $|S|\geq3$. Without loss of generality (by interchanging all friends with strangers and vice versa), suppose the former happens. Then, select three guests in $F$. Either they are mutual strangers, in which case I am done, or two of them are friends, thus with $x$ the three are mutual friends.
 
-![party problem](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Ramsey_theorem_visual_proof.svg/500px-Ramsey_theorem_visual_proof.svg.png)
+![party problem|300](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Ramsey_theorem_visual_proof.svg/500px-Ramsey_theorem_visual_proof.svg.png)
 
 ## A glimpse into Ramsey theory (out of scope of this course)
 
@@ -166,7 +166,7 @@ For any graph $G$ on $n$ vertices, the statement $G\to K_n$ holds. Thus it makes
 >
 >Suppose that $\varphi:G\to K_{\chi(G)}$. Prove that for any two distinct $i,j\in V(K_k)$, there is an edge from $\varphi^{-1}\{i\}$ to $\varphi^{-1}\{j\}$ in $G$.
 
-![3-colorings](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Graph_with_all_three-colourings_2.svg/500px-Graph_with_all_three-colourings_2.svg.png)
+![3-colorings|300](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Graph_with_all_three-colourings_2.svg/500px-Graph_with_all_three-colourings_2.svg.png)
 ### An application: scheduling problems
 
 Your university has a bunch of courses: MAT224, MAT246, MAT237, etc. Students can be enrolled in multiple courses. You need to schedule the exams so that every student can attend without conflicts.
@@ -215,13 +215,11 @@ The most important types of morphisms are defined here.
 
 Two non-isomorphic graphs with the same number of vertices and edges:
 
-![non-isomorphic graphs](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Whitneys_theorem_exception.svg/500px-Whitneys_theorem_exception.svg.png)
+![non-isomorphic graphs|250](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Whitneys_theorem_exception.svg/500px-Whitneys_theorem_exception.svg.png)
 
 The following two graphs are isomorphic:
 
-![Petersen graph 1](https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Petersen1_tiny.svg/400px-Petersen1_tiny.svg.png)
-
-![Petersen graph 2](https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Petersen2_tiny.svg/500px-Petersen2_tiny.svg.png)
+![Petersen graph 1|200](https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Petersen1_tiny.svg/400px-Petersen1_tiny.svg.png) ![Petersen graph 2|200](https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Petersen2_tiny.svg/500px-Petersen2_tiny.svg.png)
 
 >[!thm] Remark.
 >
@@ -297,7 +295,7 @@ A graph $G$ is called _asymmetric_ if $|\operatorname{Aut}(G)|=1$. Equivalently,
 
 An example of an asymmetric graph that is 3-regular:
 
-![Frucht graph](https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Frucht_graph.dot.svg/500px-Frucht_graph.dot.svg.png)
+![Frucht graph|200](https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Frucht_graph.dot.svg/500px-Frucht_graph.dot.svg.png)
 
 >[!note] **Hard** exercise.
 >
@@ -341,7 +339,7 @@ An example of an asymmetric graph that is 3-regular:
 
 A tree:
 
-![Tree](https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Tree_graph.svg/360px-Tree_graph.svg.png)
+![Tree|200](https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Tree_graph.svg/360px-Tree_graph.svg.png)
 
 >[!abstract] Examples.
 >
@@ -429,7 +427,7 @@ Recall that $K_2$ is a just an edge. As an exercise, try proving the following r
 >2. Complete bipartite graphs are bipartite.
 >3. Even cycles are bipartite but odd cycles are not. A much stronger result is true, see below.
 
-![Bipartite graph](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Biclique_K_3_5_bicolor.svg/500px-Biclique_K_3_5_bicolor.svg.png)
+![Bipartite graph|200](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Biclique_K_3_5_bicolor.svg/500px-Biclique_K_3_5_bicolor.svg.png)
 
 >[!thm] Theorem.
 >
@@ -457,7 +455,7 @@ First, let me define the _Boolean lattice graph_ $B_n$. Consider $2^n$, the set 
 
 For instance, $B_1$ has just a single edge $\{0,1\}$. $B_2$ is isomorphic to the square $C_4$. $B_3$ when drawn looks like a three-dimensional cube. $B_4$ looks like a tesseract. You get the idea.
 
-![B_3](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Hamming_distance_3_bit_binary.svg/300px-Hamming_distance_3_bit_binary.svg.png)
+![B_3|200](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Hamming_distance_3_bit_binary.svg/300px-Hamming_distance_3_bit_binary.svg.png)
 
 >[!thm] Proposition.
 >
