@@ -1,4 +1,4 @@
 ---
-title: Quantitative Finance
+title: "Quantitative Finance"
 draft: False
 ---

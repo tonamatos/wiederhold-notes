@@ -20,7 +20,7 @@ Please see my main website to explore my research projects:
 >
 >A unified framework linking machine learning and compactness, exemplifying how the topology of function spaces encodes the algorithmic and epistemic limits of prediction.
 >
->![|100](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Newtroot_1_0_0_m1.png/250px-Newtroot_1_0_0_m1.png)
+><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Newtroot_1_0_0_m1.png/250px-Newtroot_1_0_0_m1.png" width="200">
 >
 >>[Preprint](https://tonamatos.github.io/DeepComputationsNIP/) 
 
@@ -28,7 +28,7 @@ Please see my main website to explore my research projects:
 >
 >A new border-tracing algorithm that generalizes classical image segmentation techniques from pixel-based grids to arbitrary polygonal tilings in abstract adjacency graphs.
 >
->![|100](https://bordertracer.research.wiederhold.dev/cover.png)
+><img src="https://bordertracer.research.wiederhold.dev/cover.png" width="200">
 >
 >>[Project website](https://bordertracer.research.wiederhold.dev/) | Paper to be published
 
@@ -36,7 +36,7 @@ Please see my main website to explore my research projects:
 >
 >Extended the Black-Scholes / geometric Brownian motion model by adding Poisson jumps to capture sudden market moves; calibrated the parameters on historical stock price data using a limited-memory BFGS optimization algorithm, using finite differences to estimate the Merton deltas; and compared hedging strategies across multiple assets, finding improved performance on jumpy stocks.
 >
->![|100](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTJnNHk5ZG94eTV0MDA0dWRiYzZvZXViNDlpZjJlaXhpbms1NDE3aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iYTXFJofI7I987H92k/giphy.gif) 
+><img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTJnNHk5ZG94eTV0MDA0dWRiYzZvZXViNDlpZjJlaXhpbms1NDE3aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iYTXFJofI7I987H92k/giphy.gif" width="200">
 >
 >>[Project website](https://quant.wiederhold.dev/)
 
@@ -46,13 +46,13 @@ Please see my main website to explore my research projects:
 >
 >Developed as **Visiting Scholar** at the Fields Institute for Mathematical Sciences, in partnership with a major Canadian bank.
 >
->![|100](https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Directed_graph_no_background.svg/380px-Directed_graph_no_background.svg.png) 
+><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Directed_graph_no_background.svg/380px-Directed_graph_no_background.svg.png" width="200"> 
 
 >[!abstract] Fer Group
 >
 >A comprehensive object-oriented framework for the study of graph automorphism groups and more, including an optimally indexed SQL database for statistical inference and hypothesis testing.
 >
->![|100](https://fergroup.research.wiederhold.dev/k6_t_black.gif) 
+><img src="https://fergroup.research.wiederhold.dev/k6_t_black.gif" width="200"> 
 >
 >>[Project website](https://fergroup.research.wiederhold.dev/) | [Published paper](https://arxiv.org/abs/2311.17182)
 
@@ -60,19 +60,19 @@ Please see my main website to explore my research projects:
 >
 >We leveraged recent advancements in Graph Neural Networks to optimize a noisy communication network to estimate its Shannon capacity.
 >
->![|100](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Message_Passing_Neural_Network.png/500px-Message_Passing_Neural_Network.png)
+><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Message_Passing_Neural_Network.png/500px-Message_Passing_Neural_Network.png" width="200">
 
 >[!abstract] Wiki Explorer
 >
 >A pipeline that fully automates educational video creation and streaming based off Wikipedia entries without any intervention.
 >
->![|100](https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/48630cd498e850160f6cf7b74dd205ab~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=14579&refresh_token=a54294ba&x-expires=1763240400&x-signature=eO5I7GlIz2rViCPOals7FvTHlAM%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my)
+><img src="https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/48630cd498e850160f6cf7b74dd205ab~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=14579&refresh_token=a54294ba&x-expires=1763240400&x-signature=eO5I7GlIz2rViCPOals7FvTHlAM%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70" width="200">
 
 >[!abstract] Set Theory Forces Probability
 >
 >Take the naturals as vertices of an infinite graph and flip a coin to decide whether each pair is an edge or not. Do this twice and you obtain two different infinite graphs. What is the probability that they are isomorphic? I give a new proof that the answer is, surprisingly, 100%.
 >
->![|100](https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Rado_extension.svg/680px-Rado_extension.svg.png)
+><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Rado_extension.svg/680px-Rado_extension.svg.png" width="200">
 >
 >>[Published paper](https://arxiv.org/abs/2008.07460)
 
@@ -80,7 +80,7 @@ Please see my main website to explore my research projects:
 >
 >We construct a dense linear order of arbitrary infinite cardinal on which Player II has a winning strategy on all payoff sets for the Cantor game.
 >
->![|100](https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/An_infinite_tree_with_a_non-trivial_well-ordering-color.gif/600px-An_infinite_tree_with_a_non-trivial_well-ordering-color.gif)
+><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/An_infinite_tree_with_a_non-trivial_well-ordering-color.gif/600px-An_infinite_tree_with_a_non-trivial_well-ordering-color.gif" width="200">
 >
 >>[Published paper](https://arxiv.org/abs/2408.14624)
 

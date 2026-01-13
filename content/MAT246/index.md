@@ -12,7 +12,7 @@ Some general advice on learning mathematics can be found [[Advice|here]].
 
 ### 1. Foundations
 
-1. [[Teaching/MAT246 Concepts in Abstract Math/2025 Summer/1/Introduction|Introduction]]
+1. [[Introduction|Introduction]]
 2. [[Elementary set theory]]
 3. [[Relations]]
 4. [[Functions]]
